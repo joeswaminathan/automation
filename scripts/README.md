@@ -1,1 +1,1 @@
-Automation scripts are stored here
+Automation python scripts are stored here
