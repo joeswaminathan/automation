@@ -1,7 +1,7 @@
 import aiohttp
 import asyncio
 import logging
-from hv_logger import setupLogger
+from scripts.hv_logger import setupLogger
 import json
 import os
 import sys

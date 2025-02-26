@@ -1,0 +1,29 @@
+curl -X POST -H "Content-Type: application/json" -d "{\"name\":\"CameraOne\"}" http://localhost:8081/devices/simulated/cameras/new
+
+curl -X POST -H "Content-Type: application/json" -d "{}" http://localhost:8081/devices/simulated/cameras
+
+curl -X GET http://localhost:8081/devices/simulated/cameras/<CAMERA_ID>
+
+curl -X POST -H "Content-Type: application/json" -d "{}" http://localhost:8081/devices/simulated/cameras/status
+
+curl -X GET http://localhost:8081/devices/simulated/cameras/status/<CAMERA_ID>
+
+curl -X POST -H "Content-Type: application/json" -d "{\"name\":\"MonitorOne\"}" http://localhost:8081/devices/simulated/multi-vital-monitors/new
+
+curl -X POST -H "Content-Type: application/json" -d "{}" http://localhost:8081/devices/simulated/multi-vital-monitors
+
+curl -X GET http://localhost:8081/devices/simulated/multi-vital-monitors/<MONITOR_ID>
+
+curl -X POST -H "Content-Type: application/json" -d "{}" http://localhost:8081/devices/simulated/multi-vital-monitors/status
+
+curl -X GET http://localhost:8081/devices/simulated/multi-vital-monitors/status/<MONITOR_ID>
+
+curl -X POST -H "Content-Type: application/json" -d "{\"command\":\"add\", \"type\":\"camera\", \"id\":\"cam-001\"}" http://localhost:8081/device
+
+curl -X POST -H "Content-Type: application/json" -d "{\"command\":\"delete\", \"id\":\"cam-001\"}" http://localhost:8081/device
+
+curl -X POST -H "Content-Type: application/json" -d "{\"id\":\"msg-001\", \"batch\":[{\"id\":\"msg-001\", \"data\":\"Test Command\"}]}" http://localhost:8081/command
+
+curl -X POST -H "Content-Type: application/json" -d "{\"id\":\"msg-002\", \"batch\":[{\"id\":\"msg-002\", \"data\":\"Test Status\"}]}" http://localhost:8081/status
+
+curl -X POST -H "Content-Type: application/json" -d "{\"id\":\"msg-003\", \"data\":\"Test Response\"}" http://localhost:8081/response

@@ -1,0 +1,18 @@
+2025-02-26 13:13:07 - INFO - autochart - Starting simulated devices REST server on http://0.0.0.0:8081
+2025-02-26 13:15:37 - INFO - autochart - [600397f8] Request received: POST /devices/simulated/cameras/new - Client: 127.0.0.1
+2025-02-26 13:15:37 - INFO - autochart - [600397f8] Request body: {"name": "CameraOne"}
+2025-02-26 13:15:37 - INFO - autochart - Created new camera with ID: 421c6c26-dc44-4ca5-853f-1131a8ee71ff
+2025-02-26 13:15:37 - INFO - autochart - [600397f8] Response sent: 201 - Took 0.0010s
+2025-02-26 13:15:47 - INFO - autochart - [710c7e04] Request received: POST /devices/simulated/cameras - Client: 127.0.0.1
+2025-02-26 13:15:47 - INFO - autochart - [710c7e04] Request body: {}
+2025-02-26 13:15:47 - INFO - autochart - Returning all simulated cameras with filters: {}
+2025-02-26 13:15:47 - INFO - autochart - [710c7e04] Response sent: 200 - Took 0.0015s
+2025-02-26 13:16:31 - INFO - autochart - Starting simulated devices REST server on http://0.0.0.0:8081
+2025-02-26 13:16:40 - INFO - autochart - [190723e1] Request received: POST /devices/simulated/cameras - Client: 127.0.0.1
+2025-02-26 13:16:40 - INFO - autochart - [190723e1] Request body: {}
+2025-02-26 13:16:40 - INFO - autochart - Returning all simulated cameras with filters: {}
+2025-02-26 13:16:40 - INFO - autochart - [190723e1] Response sent: 200 - Took 0.0010s
+2025-02-26 13:16:51 - INFO - autochart - [baa0c2b5] Request received: POST /devices/simulated/cameras/new - Client: 127.0.0.1
+2025-02-26 13:16:51 - INFO - autochart - [baa0c2b5] Request body: {"name": "CameraOne"}
+2025-02-26 13:16:51 - INFO - autochart - Created new camera with ID: 1f5e150a-85f8-4b87-90be-37c63a7d39e0
+2025-02-26 13:16:51 - INFO - autochart - [baa0c2b5] Response sent: 201 - Took 0.0010s
