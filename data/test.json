@@ -22,35 +22,6 @@
       "id": "device-1"
     },
     {
-      "command": "AttachDevice",
-      "payload": {
-        "device_id" : "device-1",
-        "patient_id" : "patient-1",
-        "configuration": 0.15
-      }
-    },
-    {
-      "command": "DetachDevice",
-      "payload": {
-        "device_id" : "device-1",
-        "patient_id" : "patient-1"
-      }
-    },
-    {
-      "command": "DeletePatient",
-      "id": "patient-1"
-    },
-    {
-      "command": "DeleteDevice",
-      "id": "device-1"
-    },
-    {
-      "command" : "GetPatients"
-    },
-    {
-      "command" : "GetDevices"
-    },
-    {
       "command" : "WriteDB",
       "payload" : {
         "JsonDB" : "<file path>"
@@ -58,4 +29,3 @@
     }
   ]
 }
-
