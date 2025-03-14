@@ -1,0 +1,61 @@
+{
+  "commands": [
+    {
+      "command": "AddPatient",
+      "payload": {
+        "type": "REMOTE",
+        "fname": "test",
+        "lname": "one",
+        "sex": "male",
+        "DOB": "2025-10-02"
+      },
+      "id": "patient-1"
+    },
+    {
+      "command": "AddDevice",
+      "payload": {
+        "type": "CAMERA",
+        "branch": "",
+        "mac": "00.00.00.00",
+        "deviceSerial": "Harris-Jad-Camera-simulated"
+      },
+      "id": "device-1"
+    },
+    {
+      "command": "AttachDevice",
+      "payload": {
+        "device_id" : "device-1",
+        "patient_id" : "patient-1",
+        "configuration": 0.15
+      }
+    },
+    {
+      "command": "DetachDevice",
+      "payload": {
+        "device_id" : "device-1",
+        "patient_id" : "patient-1"
+      }
+    },
+    {
+      "command": "DeletePatient",
+      "id": "patient-1"
+    },
+    {
+      "command": "DeleteDevice",
+      "id": "device-1"
+    },
+    {
+      "command" : "GetPatients"
+    },
+    {
+      "command" : "GetDevices"
+    },
+    {
+      "command" : "WriteDB",
+      "payload" : {
+        "JsonDB" : "<file path>"
+      }
+    }
+  ]
+}
+
