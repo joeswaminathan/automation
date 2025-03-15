@@ -1,0 +1,18 @@
+{
+  "commands": [
+    {
+      "command" : "ReadDB",
+      "payload" : {
+        "JsonDB" : "db.json"
+      }
+    },
+    {
+      "command": "DetachDevice",
+      "payload": {
+        "device_id" : "device-1",
+        "patient_id" : "patient-1"
+      }
+    }
+  ]
+}
+

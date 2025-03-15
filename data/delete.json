@@ -1,0 +1,25 @@
+{
+  "commands": [
+    {
+      "command" : "ReadDB",
+      "payload" : {
+        "JsonDB" : "db.json"
+      }
+    },
+    {
+      "command": "DeletePatient",
+      "id": "patient-1"
+    },
+    {
+      "command": "DeleteDevice",
+      "id": "device-1"
+    },
+    {
+      "command" : "WriteDB",
+      "payload" : {
+        "JsonDB" : "db-delete.json"
+      }
+    }
+  ]
+}
+

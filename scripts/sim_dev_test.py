@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import aiohttp
 import asyncio
 import logging
@@ -6,6 +8,8 @@ import json
 import os
 import sys
 from pprint import pprint
+import threading
+from concurrent.futures import ThreadPoolExecutor
 
 setupLogger()
 logger = logging.getLogger("autochart")
@@ -27,10 +31,11 @@ class HttpOps(object):
         # Check if the request was successful
                 if response.status < 300:
                     data = await response.json()
-                    logger.info(f"Response: {data}")
+                    #logger.info(f"Response: {data}")
                     return data
                 else:
-                    logger.info(f"Request failed with status: {response.status}")
+                    logger.debug(f"Get Request failed with status: {response}")
+                    logger.info(f"Get Request failed with status: {response.status}")
         return None
 
     async def post(self, url, payload):
@@ -39,10 +44,10 @@ class HttpOps(object):
                 # Check if the request was successful
                 if response.status < 300:
                     data = await response.json()
-                    logger.info(f"Response: {data}")
+                    #logger.info(f"Response: {data}")
                     return data
                 else:
-                    logger.info(f"Request failed with status: {response.status}")
+                    logger.info(f"Post Request failed with status: {response.status}")
         return None
 
     async def delete(self, url):
@@ -51,10 +56,10 @@ class HttpOps(object):
                 # Check if the request was successful
                 if response.status < 300:
                     data = await response.json()
-                    logger.info(f"Response: {data}")
+                    #logger.info(f"Response: {data}")
                     return data
                 else:
-                    logger.info(f"Request failed with status: {response.status}")
+                    logger.info(f"Delete Request failed with status: {response.status}")
         return None
 
 
@@ -67,12 +72,11 @@ class SaaS(HttpOps):
 
     async def read_patient(self, payload):
         global patientDB, deviceDB
-        response = await self.get_patient_by_id(payload['id'], payload['uuid'])
- 
+        response = await self.get_patient_by_id(payload['id'], { "id" : payload['uuid'] })
  
     async def read_device(self, payload):
         global patientDB, deviceDB
-        response = await self.get_device_by_id(payload['id'], payload['uuid'])
+        response = await self.get_device_by_id(payload['id'], { "id" : payload['uuid'] })
 
     async def read_DB(self, payload):
         global patientDB, deviceDB
@@ -81,10 +85,9 @@ class SaaS(HttpOps):
         commands = data['commands']
         for c in commands:
                 if c["command"] == "ReadPatient":
-                    self.read_patient(c["payload"])
+                    await self.read_patient(c["payload"])
                 if c["command"] == "ReadDevice":
-                    self.read_device(c["payload"])
-                
+                    await self.read_device(c["payload"])
 
     async def add_patient(self, pId, payload):
         global patientDB, deviceDB
@@ -280,19 +283,10 @@ class SaaS(HttpOps):
         for idx, device in enumerate(devices):
             dId = f"-delete-device-{idx}"
             deviceDB[dId] = device
-            """
-            if ( ( device['patient'] is not None )
-                 and ( device['patient']['uuid'] is not None ) ):
-                pUuid = device['patient']['uuid']
-                pId = f"-delete-device-patient-{idx}"
-                patientDB[pId] = await self.get_patient_by_id(pId, { "id" : pUuid })
-                await self.detach_device( pId, dId )
-                del patientDB[pId]
-            """
             await SD.delete_device(dId)
         deviceDB = {}
 
-    def writeDB(self):
+    async def write_DB(self, payload):
         global patientDB, deviceDB
         outDB = {}
         commands = []
@@ -301,10 +295,10 @@ class SaaS(HttpOps):
         for id in deviceDB.keys():
             commands.append({"command" : "ReadDevice", "payload" : {"id" : id, "uuid" : deviceDB[id]['uuid']}})
         outDB['commands'] = commands
-        with open('output.json', 'w') as file:
-            json.dumps(outDB, file, indent=4)
-        file_path = os.path.abspath('output.json')
-        return file_path
+        loop = asyncio.get_running_loop()
+        with ThreadPoolExecutor() as pool:
+            await loop.run_in_executor(pool, lambda: json.dump(outDB, open(payload['JsonDB'], "w"), indent=4))
+
 
 simulatedDB ={}
 
@@ -361,6 +355,21 @@ SD = SaaS(os.getenv('TOKEN'),
 async def execute_command(command):
     global ED, SD
     match command['command']:
+        case "Pause":
+            logger.info(f"Pausing for {command['payload']['duration']} seconds")
+            await asyncio.sleep(command['payload']['duration'])
+        case "ReadDB":
+            await SD.read_DB(command['payload'])
+        case "WriteDB":
+            await SD.write_DB(command['payload'])
+        case "GetPatients":
+            await SD.get_patients()
+        case "GetDevices":
+            await SD.get_devices()
+        case "ReadPatient":
+            await SD.read_patient(command["payload"])
+        case "ReadDevice":
+            await SD.read_device(command["payload"])
         case "AddPatient":
             await SD.add_patient(command['id'],
                                  command['payload'])
@@ -402,7 +411,7 @@ async def execute_command(command):
         case "GetMediaStreams":
             await ED.get_media_streams()
         case _ :
-            print("Error: command ({command}) not recognized")
+            print(f"Error: command ({command}) not recognized")
 
 async def main():
     if len(sys.argv) < 2:

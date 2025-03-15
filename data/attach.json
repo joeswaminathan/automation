@@ -1,0 +1,19 @@
+{
+  "commands": [
+    {
+      "command" : "ReadDB",
+      "payload" : {
+        "JsonDB" : "db.json"
+      }
+    },
+    {
+      "command": "AttachDevice",
+      "payload": {
+        "device_id" : "device-1",
+        "patient_id" : "patient-1",
+        "configuration": 0.15
+      }
+    }
+  ]
+}
+

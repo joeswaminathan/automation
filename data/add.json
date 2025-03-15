@@ -4,8 +4,8 @@
       "command": "AddPatient",
       "payload": {
         "type": "REMOTE",
-        "fname": "test",
-        "lname": "one",
+        "fname": "joe",
+        "lname": "swami",
         "sex": "male",
         "DOB": "2025-10-02"
       },
@@ -17,14 +17,14 @@
         "type": "CAMERA",
         "branch": "",
         "mac": "00.00.00.00",
-        "deviceSerial": "Harris-Jad-Camera-simulated"
+        "deviceSerial": "camera-1"
       },
       "id": "device-1"
     },
     {
       "command" : "WriteDB",
       "payload" : {
-        "JsonDB" : "<file path>"
+        "JsonDB" : "db.json"
       }
     }
   ]
