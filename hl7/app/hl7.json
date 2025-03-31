@@ -1,0 +1,1829 @@
+{
+  "tables": {
+    "0003": [
+      {
+        "value": "A01",
+        "description": "ADT/ACK - Admit/visit notification"
+      },
+      {
+        "value": "A02",
+        "description": "ADT/ACK - Transfer a patient"
+      },
+      {
+        "value": "A03",
+        "description": "ADT/ACK - Discharge/end visit"
+      },
+      {
+        "value": "A04",
+        "description": "ADT/ACK - Register a patient"
+      },
+      {
+        "value": "A05",
+        "description": "ADT/ACK - Pre-admit a patient"
+      },
+      {
+        "value": "A06",
+        "description": "ADT/ACK - Change an outpatient to an inpatient"
+      },
+      {
+        "value": "A07",
+        "description": "ADT/ACK - Change an inpatient to an outpatient"
+      },
+      {
+        "value": "A08",
+        "description": "ADT/ACK - Update patient information"
+      },
+      {
+        "value": "A09",
+        "description": "ADT/ACK - Patient departing - tracking"
+      },
+      {
+        "value": "A10",
+        "description": "ADT/ACK - Patient arriving - tracking"
+      },
+      {
+        "value": "A11",
+        "description": "ADT/ACK - Cancel admit/visit notification"
+      },
+      {
+        "value": "A12",
+        "description": "ADT/ACK - Cancel transfer"
+      },
+      {
+        "value": "A13",
+        "description": "ADT/ACK - Cancel discharge/end visit"
+      },
+      {
+        "value": "A14",
+        "description": "ADT/ACK - Pending admit"
+      },
+      {
+        "value": "A15",
+        "description": "ADT/ACK - Pending transfer"
+      },
+      {
+        "value": "A16",
+        "description": "ADT/ACK - Pending discharge"
+      },
+      {
+        "value": "A17",
+        "description": "ADT/ACK - Swap patients"
+      },
+      {
+        "value": "A18",
+        "description": "ADT/ACK - Merge patient information"
+      },
+      {
+        "value": "A19",
+        "description": "QRY/ADR - Patient query"
+      },
+      {
+        "value": "A20",
+        "description": "ADT/ACK - Bed status update"
+      },
+      {
+        "value": "A21",
+        "description": "ADT/ACK - Patient goes on a leave of absence"
+      },
+      {
+        "value": "A22",
+        "description": "ADT/ACK - Patient returns from a leave of absence"
+      },
+      {
+        "value": "A23",
+        "description": "ADT/ACK - Delete a patient record"
+      },
+      {
+        "value": "A24",
+        "description": "ADT/ACK - Link patient information"
+      },
+      {
+        "value": "A25",
+        "description": "ADT/ACK - Cancel pending discharge"
+      },
+      {
+        "value": "A26",
+        "description": "ADT/ACK - Cancel pending transfer"
+      },
+      {
+        "value": "A27",
+        "description": "ADT/ACK - Cancel pending admit"
+      },
+      {
+        "value": "A28",
+        "description": "ADT/ACK - Add person information"
+      },
+      {
+        "value": "A29",
+        "description": "ADT/ACK - Delete person information"
+      },
+      {
+        "value": "A30",
+        "description": "ADT/ACK - Merge person information"
+      },
+      {
+        "value": "A31",
+        "description": "ADT/ACK - Update person information"
+      },
+      {
+        "value": "A32",
+        "description": "ADT/ACK - Cancel patient arriving - tracking"
+      },
+      {
+        "value": "A33",
+        "description": "ADT/ACK - Cancel patient departing - tracking"
+      },
+      {
+        "value": "A34",
+        "description": "ADT/ACK - Merge patient information - patient ID only"
+      },
+      {
+        "value": "A35",
+        "description": "ADT/ACK - Merge patient information - account number only"
+      },
+      {
+        "value": "A36",
+        "description": "ADT/ACK - Merge patient information - patient ID and account number"
+      },
+      {
+        "value": "A37",
+        "description": "ADT/ACK - Unlink patient information"
+      },
+      {
+        "value": "A38",
+        "description": "ADT/ACK - Cancel pre-admit"
+      },
+      {
+        "value": "A39",
+        "description": "ADT/ACK - Merge person- patient ID"
+      },
+      {
+        "value": "A40",
+        "description": "ADT/ACK - Merge patient - patient identifier list"
+      },
+      {
+        "value": "A41",
+        "description": "ADT/ACK - Merge account - patient account number"
+      },
+      {
+        "value": "A42",
+        "description": "ADT/ACK - Merge visit - visit number"
+      },
+      {
+        "value": "A43",
+        "description": "ADT/ACK - Move patient information - patient identifier list"
+      },
+      {
+        "value": "A44",
+        "description": "ADT/ACK - Move account information - patient account number"
+      },
+      {
+        "value": "A45",
+        "description": "ADT/ACK - Move visit information - visit number"
+      },
+      {
+        "value": "A46",
+        "description": "ADT/ACK - Change patient ID"
+      },
+      {
+        "value": "A47",
+        "description": "ADT/ACK - Change patient identifier list"
+      },
+      {
+        "value": "A48",
+        "description": "ADT/ACK - Change alternate patient ID"
+      },
+      {
+        "value": "A49",
+        "description": "ADT/ACK - Change patient account number"
+      },
+      {
+        "value": "A50",
+        "description": "ADT/ACK - Change visit number"
+      },
+      {
+        "value": "A51",
+        "description": "ADT/ACK - Change alternate visit ID"
+      },
+      {
+        "value": "C01",
+        "description": "CRM - Register a patient on a clinical trial"
+      },
+      {
+        "value": "C02",
+        "description": "CRM - Cancel a patient registration on clinical trial (for clerical mistakes only)"
+      },
+      {
+        "value": "C03",
+        "description": "CRM - Correct/update registration information"
+      },
+      {
+        "value": "C04",
+        "description": "CRM - Patient has gone off a clinical trial"
+      },
+      {
+        "value": "C05",
+        "description": "CRM - Patient enters phase of clinical trial"
+      },
+      {
+        "value": "C06",
+        "description": "CRM - Cancel patient entering a phase (clerical mistake)"
+      },
+      {
+        "value": "C07",
+        "description": "CRM - Correct/update phase information"
+      },
+      {
+        "value": "C08",
+        "description": "CRM - Patient has gone off phase of clinical trial"
+      },
+      {
+        "value": "C09",
+        "description": "CSU - Automated time intervals for reporting; like monthly"
+      },
+      {
+        "value": "C10",
+        "description": "CSU - Patient completes the clinical trial"
+      },
+      {
+        "value": "C11",
+        "description": "CSU - Patient completes a phase of the clinical trial"
+      },
+      {
+        "value": "C12",
+        "description": "CSU - Update/correction of patient order/result information"
+      },
+      {
+        "value": "CNQ",
+        "description": "QRY/EQQ/SPQ/VQQ/RQQ - Cancel query"
+      },
+      {
+        "value": "I01",
+        "description": "RQI/RPI - Request for insurance information"
+      },
+      {
+        "value": "I02",
+        "description": "RQI/RPL - Request/receipt of patient selection display list"
+      },
+      {
+        "value": "I03",
+        "description": "RQI/RPR - Request/receipt of patient selection list"
+      },
+      {
+        "value": "I04",
+        "description": "RQD/RPI - Request for patient demographic data"
+      },
+      {
+        "value": "I05",
+        "description": "RQC/RCI - Request for patient clinical information"
+      },
+      {
+        "value": "I06",
+        "description": "RQC/RCL - Request/receipt of clinical data listing"
+      },
+      {
+        "value": "I07",
+        "description": "PIN/ACK - Unsolicited insurance information"
+      },
+      {
+        "value": "I08",
+        "description": "RQA/RPA - Request for treatment authorization information"
+      },
+      {
+        "value": "I09",
+        "description": "RQA/RPA - Request for modification to an authorization"
+      },
+      {
+        "value": "I10",
+        "description": "RQA/RPA - Request for resubmission of an authorization"
+      },
+      {
+        "value": "I11",
+        "description": "RQA/RPA - Request for cancellation of an authorization"
+      },
+      {
+        "value": "I12",
+        "description": "REF/RRI - Patient referral"
+      },
+      {
+        "value": "I13",
+        "description": "REF/RRI - Modify patient referral"
+      },
+      {
+        "value": "I14",
+        "description": "REF/RRI - Cancel patient referral"
+      },
+      {
+        "value": "I15",
+        "description": "REF/RRI - Request patient referral status"
+      },
+      {
+        "value": "M01",
+        "description": "MFN/MFK - Master file not otherwise specified (for backward compatibility only)"
+      },
+      {
+        "value": "M02",
+        "description": "MFN/MFK - Master file - staff practitioner"
+      },
+      {
+        "value": "M03",
+        "description": "MFN/MFK - Master file - test/observation (for backward compatibility only)"
+      },
+      {
+        "value": "M04",
+        "description": "MFN/MFK - Master files charge description"
+      },
+      {
+        "value": "M05",
+        "description": "MFN/MFK - Patient location master file"
+      },
+      {
+        "value": "M06",
+        "description": "MFN/MFK - Clinical study with phases and schedules master file"
+      },
+      {
+        "value": "M07",
+        "description": "MFN/MFK - Clinical study without phases but with schedules master file"
+      },
+      {
+        "value": "M08",
+        "description": "MFN/MFK - Test/observation (numeric) master file"
+      },
+      {
+        "value": "M09",
+        "description": "MFN/MFK - Test/observation (categorical) master file"
+      },
+      {
+        "value": "M10",
+        "description": "MFN/MFK - Test /observation batteries master file"
+      },
+      {
+        "value": "M11",
+        "description": "MFN/MFK - Test/calculated observations master file"
+      },
+      {
+        "value": "O01",
+        "description": "ORM - Order message (also RDE; RDS; RGV; RAS)"
+      },
+      {
+        "value": "O02",
+        "description": "ORR - Order response (also RRE; RRD; RRG; RRA)"
+      },
+      {
+        "value": "P01",
+        "description": "BAR/ACK - Add patient accounts"
+      },
+      {
+        "value": "P02",
+        "description": "BAR/ACK - Purge patient accounts"
+      },
+      {
+        "value": "P03",
+        "description": "DFT/ACK - Post detail financial transaction"
+      },
+      {
+        "value": "P04",
+        "description": "QRY/DSP - Generate bill and A/R statements"
+      },
+      {
+        "value": "P05",
+        "description": "BAR/ACK - Update account"
+      },
+      {
+        "value": "P06",
+        "description": "BAR/ACK - End account"
+      },
+      {
+        "value": "P07",
+        "description": "PEX - Unsolicited initial individual product experience report"
+      },
+      {
+        "value": "P08",
+        "description": "PEX - Unsolicited update individual product experience report"
+      },
+      {
+        "value": "P09",
+        "description": "SUR - Summary product experience report"
+      },
+      {
+        "value": "PC1",
+        "description": "PPR - PC/ problem add"
+      },
+      {
+        "value": "PC2",
+        "description": "PPR - PC/ problem update"
+      },
+      {
+        "value": "PC3",
+        "description": "PPR - PC/ problem delete"
+      },
+      {
+        "value": "PC4",
+        "description": "QRY - PC/ problem query"
+      },
+      {
+        "value": "PC5",
+        "description": "PRR - PC/ problem response"
+      },
+      {
+        "value": "PC6",
+        "description": "PGL - PC/ goal add"
+      },
+      {
+        "value": "PC7",
+        "description": "PGL - PC/ goal update"
+      },
+      {
+        "value": "PC8",
+        "description": "PGL - PC/ goal delete"
+      },
+      {
+        "value": "PC9",
+        "description": "QRY - PC/ goal query"
+      },
+      {
+        "value": "PCA",
+        "description": "PPV - PC/ goal response"
+      },
+      {
+        "value": "PCB",
+        "description": "PPP - PC/ pathway (problem-oriented) add"
+      },
+      {
+        "value": "PCC",
+        "description": "PPP - PC/ pathway (problem-oriented) update"
+      },
+      {
+        "value": "PCD",
+        "description": "PPP - PC/ pathway (problem-oriented) delete"
+      },
+      {
+        "value": "PCE",
+        "description": "QRY - PC/ pathway (problem-oriented) query"
+      },
+      {
+        "value": "PCF",
+        "description": "PTR - PC/ pathway (problem-oriented) query response"
+      },
+      {
+        "value": "PCG",
+        "description": "PPG - PC/ pathway (goal-oriented) add"
+      },
+      {
+        "value": "PCH",
+        "description": "PPG - PC/ pathway (goal-oriented) update"
+      },
+      {
+        "value": "PCJ",
+        "description": "PPG - PC/ pathway (goal-oriented) delete"
+      },
+      {
+        "value": "PCK",
+        "description": "QRY - PC/ pathway (goal-oriented) query"
+      },
+      {
+        "value": "PCL",
+        "description": "PPT - PC/ pathway (goal-oriented) query response"
+      },
+      {
+        "value": "Q01",
+        "description": "QRY/DSR - Query sent for immediate response"
+      },
+      {
+        "value": "Q02",
+        "description": "QRY/QCK - Query sent for deferred response"
+      },
+      {
+        "value": "Q03",
+        "description": "DSR/ACK - Deferred response to a query"
+      },
+      {
+        "value": "Q04",
+        "description": "EQQ - Embedded query language query"
+      },
+      {
+        "value": "Q05",
+        "description": "UDM/ACK - Unsolicited display update message"
+      },
+      {
+        "value": "Q06",
+        "description": "OSQ/OSR - Query for order status"
+      },
+      {
+        "value": "Q07",
+        "description": "VQQ - Virtual table query"
+      },
+      {
+        "value": "Q08",
+        "description": "SPQ - Stored procedure request"
+      },
+      {
+        "value": "Q09",
+        "description": "RQQ - event replay query"
+      },
+      {
+        "value": "R01",
+        "description": "ORU/ACK - Unsolicited transmission of an observation message"
+      },
+      {
+        "value": "R02",
+        "description": "QRY - Query for results of observation"
+      },
+      {
+        "value": "R03",
+        "description": "QRY/DSR Display-oriented results; query/unsol. update (for backward compatibility only)"
+      },
+      {
+        "value": "R04",
+        "description": "ORF - Response to query; transmission of requested observation"
+      },
+      {
+        "value": "R05",
+        "description": "QRY/DSR - query for display results"
+      },
+      {
+        "value": "R06",
+        "description": "UDM - unsolicited update/display results"
+      },
+      {
+        "value": "R07",
+        "description": "EDR - enhanced display response"
+      },
+      {
+        "value": "R08",
+        "description": "TBR - tabular data response"
+      },
+      {
+        "value": "R09",
+        "description": "ERP - event replay response"
+      },
+      {
+        "value": "R0R",
+        "description": "R0R - Pharmacy prescription order query response"
+      },
+      {
+        "value": "RAR",
+        "description": "RAR - Pharmacy administration information query response"
+      },
+      {
+        "value": "RDR",
+        "description": "RDR - Pharmacy dispense information query response"
+      },
+      {
+        "value": "RER",
+        "description": "RER - Pharmacy encoded order information query response"
+      },
+      {
+        "value": "RGR",
+        "description": "RGR - Pharmacy dose information query response"
+      },
+      {
+        "value": "S01",
+        "description": "SRM/SRR - Request new appointment booking"
+      },
+      {
+        "value": "S02",
+        "description": "SRM/SRR - Request appointment rescheduling"
+      },
+      {
+        "value": "S03",
+        "description": "SRM/SRR - Request appointment modification"
+      },
+      {
+        "value": "S04",
+        "description": "SRM/SRR - Request appointment cancellation"
+      },
+      {
+        "value": "S05",
+        "description": "SRM/SRR - Request appointment discontinuation"
+      },
+      {
+        "value": "S06",
+        "description": "SRM/SRR - Request appointment deletion"
+      },
+      {
+        "value": "S07",
+        "description": "SRM/SRR - Request addition of service/resource on appointment"
+      },
+      {
+        "value": "S08",
+        "description": "SRM/SRR - Request modification of service/resource on appointment"
+      },
+      {
+        "value": "S09",
+        "description": "SRM/SRR - Request cancellation of service/resource on appointment"
+      },
+      {
+        "value": "S10",
+        "description": "SRM/SRR - Request discontinuation of service/resource on appointment"
+      },
+      {
+        "value": "S11",
+        "description": "SRM/SRR - Request deletion of service/resource on appointment"
+      },
+      {
+        "value": "S12",
+        "description": "SIU/ACK - Notification of new appointment booking"
+      },
+      {
+        "value": "S13",
+        "description": "SIU/ACK - Notification of appointment rescheduling"
+      },
+      {
+        "value": "S14",
+        "description": "SIU/ACK - Notification of appointment modification"
+      },
+      {
+        "value": "S15",
+        "description": "SIU/ACK - Notification of appointment cancellation"
+      },
+      {
+        "value": "S16",
+        "description": "SIU/ACK - Notification of appointment discontinuation"
+      },
+      {
+        "value": "S17",
+        "description": "SIU/ACK - Notification of appointment deletion"
+      },
+      {
+        "value": "S18",
+        "description": "SIU/ACK - Notification of addition of service/resource on appointment"
+      },
+      {
+        "value": "S19",
+        "description": "SIU/ACK - Notification of modification of service/resource on appointment"
+      },
+      {
+        "value": "S20",
+        "description": "SIU/ACK - Notification of cancellation of service/resource on appointment"
+      },
+      {
+        "value": "S21",
+        "description": "SIU/ACK - Notification of discontinuation of service/resource on appointment"
+      },
+      {
+        "value": "S22",
+        "description": "SIU/ACK - Notification of deletion of service/resource on appointment"
+      },
+      {
+        "value": "S23",
+        "description": "SIU/ACK - Notification of blocked schedule time slot(s)"
+      },
+      {
+        "value": "S24",
+        "description": "SIU/ACK - Notification of opened (â€œunblockedâ€) schedule time slot(s)"
+      },
+      {
+        "value": "S25",
+        "description": "SQM/SQR - Schedule query message and response"
+      },
+      {
+        "value": "S26",
+        "description": "SIU/ACK Notification that patient did not show up for schedule appointment"
+      },
+      {
+        "value": "T01",
+        "description": "MDM/ACK - Original document notification"
+      },
+      {
+        "value": "T02",
+        "description": "MDM/ACK - Original document notification and content"
+      },
+      {
+        "value": "T03",
+        "description": "MDM/ACK - Document status change notification"
+      },
+      {
+        "value": "T04",
+        "description": "MDM/ACK - Document status change notification and content"
+      },
+      {
+        "value": "T05",
+        "description": "MDM/ACK - Document addendum notification"
+      },
+      {
+        "value": "T06",
+        "description": "MDM/ACK - Document addendum notification and content"
+      },
+      {
+        "value": "T07",
+        "description": "MDM/ACK - Document edit notification"
+      },
+      {
+        "value": "T08",
+        "description": "MDM/ACK - Document edit notification and content"
+      },
+      {
+        "value": "T09",
+        "description": "MDM/ACK - Document replacement notification"
+      },
+      {
+        "value": "T10",
+        "description": "MDM/ACK - Document replacement notification and content"
+      },
+      {
+        "value": "T11",
+        "description": "MDM/ACK - Document cancel notification"
+      },
+      {
+        "value": "T12",
+        "description": "QRY/DOC - Document query"
+      },
+      {
+        "value": "V01",
+        "description": "VXQ - Query for vaccination record"
+      },
+      {
+        "value": "V02",
+        "description": "VXX - Response to vaccination query returning multiple PID matches"
+      },
+      {
+        "value": "V03",
+        "description": "VXR - Vaccination record response"
+      },
+      {
+        "value": "V04",
+        "description": "VXU - Unsolicited vaccination record update"
+      },
+      {
+        "value": "W01",
+        "description": "ORU - Waveform result; unsolicited transmission of requested information"
+      },
+      {
+        "value": "W02",
+        "description": "QRF - Waveform result; response to query"
+      }
+    ],
+    "0076": [
+      {
+        "value": "ACK"
+      },
+      {
+        "value": "ADR"
+      },
+      {
+        "value": "ADT"
+      },
+      {
+        "value": "ARD"
+      },
+      {
+        "value": "BAR"
+      },
+      {
+        "value": "CRM"
+      },
+      {
+        "value": "CSU"
+      },
+      {
+        "value": "DFT"
+      },
+      {
+        "value": "DOC"
+      },
+      {
+        "value": "DSR"
+      },
+      {
+        "value": "EDR"
+      },
+      {
+        "value": "EQQ"
+      },
+      {
+        "value": "ERP"
+      },
+      {
+        "value": "MCF"
+      },
+      {
+        "value": "MDM"
+      },
+      {
+        "value": "MFD"
+      },
+      {
+        "value": "MFK"
+      },
+      {
+        "value": "MFN"
+      },
+      {
+        "value": "MFQ"
+      },
+      {
+        "value": "MFR"
+      },
+      {
+        "value": "NMD"
+      },
+      {
+        "value": "NMQ"
+      },
+      {
+        "value": "NMR"
+      },
+      {
+        "value": "ORF"
+      },
+      {
+        "value": "ORM"
+      },
+      {
+        "value": "ORR"
+      },
+      {
+        "value": "ORU"
+      },
+      {
+        "value": "OSQ"
+      },
+      {
+        "value": "OSR"
+      },
+      {
+        "value": "PEX"
+      },
+      {
+        "value": "PGL"
+      },
+      {
+        "value": "PIN"
+      },
+      {
+        "value": "PPG"
+      },
+      {
+        "value": "PPP"
+      },
+      {
+        "value": "PPR"
+      },
+      {
+        "value": "PPT"
+      },
+      {
+        "value": "PPV"
+      },
+      {
+        "value": "PRR"
+      },
+      {
+        "value": "PBR"
+      },
+      {
+        "value": "PTR"
+      },
+      {
+        "value": "QCK"
+      },
+      {
+        "value": "QRY"
+      },
+      {
+        "value": "RAR"
+      },
+      {
+        "value": "RAS"
+      },
+      {
+        "value": "RCI"
+      },
+      {
+        "value": "RCL"
+      },
+      {
+        "value": "RDE"
+      },
+      {
+        "value": "RDR"
+      },
+      {
+        "value": "RDS"
+      },
+      {
+        "value": "REF"
+      },
+      {
+        "value": "RER"
+      },
+      {
+        "value": "RGR"
+      },
+      {
+        "value": "RGV"
+      },
+      {
+        "value": "ROR"
+      },
+      {
+        "value": "RPA"
+      },
+      {
+        "value": "RPI"
+      },
+      {
+        "value": "RPL"
+      },
+      {
+        "value": "RPR"
+      },
+      {
+        "value": "RQA"
+      },
+      {
+        "value": "RQC"
+      },
+      {
+        "value": "RQI"
+      },
+      {
+        "value": "RQP"
+      },
+      {
+        "value": "RQQ"
+      },
+      {
+        "value": "RRA"
+      },
+      {
+        "value": "RRD"
+      },
+      {
+        "value": "RRE"
+      },
+      {
+        "value": "RRG"
+      },
+      {
+        "value": "RRI"
+      },
+      {
+        "value": "SIU"
+      },
+      {
+        "value": "SPQ"
+      },
+      {
+        "value": "SQM"
+      },
+      {
+        "value": "SQR"
+      },
+      {
+        "value": "SRM"
+      },
+      {
+        "value": "SRR"
+      },
+      {
+        "value": "SUR"
+      },
+      {
+        "value": "TBR"
+      },
+      {
+        "value": "UDM"
+      },
+      {
+        "value": "VQQ"
+      },
+      {
+        "value": "VXQ"
+      },
+      {
+        "value": "VXR"
+      },
+      {
+        "value": "VXU"
+      },
+      {
+        "value": "VXX"
+      }
+    ],
+    "0103": [
+      {
+        "value": "D",
+        "description": "Debugging"
+      },
+      {
+        "value": "P",
+        "description": "Production"
+      },
+      {
+        "value": "T",
+        "description": "Training"
+      }
+    ],
+    "0104": [
+      {
+        "value": "2",
+        "description": "Release 2.0",
+        "comment": "September 1988"
+      },
+      {
+        "value": "2.0D",
+        "description": "Demo 2.0",
+        "comment": "October 1988"
+      },
+      {
+        "value": "2.1",
+        "description": "Release 2. 1",
+        "comment": "March 1990"
+      },
+      {
+        "value": "2.2",
+        "description": "Release 2.2",
+        "comment": "December 1994"
+      },
+      {
+        "value": "2.3",
+        "description": "Release 2.3",
+        "comment": "March 1997"
+      },
+      {
+        "value": "2.3.1",
+        "description": "Release 2.3.1"
+      },
+      {
+        "value": "2.3.2",
+        "description": "Release 2.3.2"
+      }
+    ],
+    "0207": [
+      {
+        "value": "a",
+        "description": "Archive"
+      },
+      {
+        "value": "i",
+        "description": "Initial Load"
+      },
+      {
+        "value": "r",
+        "description": "Restore from archive"
+      }
+    ],
+    "0300": [],
+    "0301": [],
+    "0354": [
+      {
+        "value": "ADT_A01",
+        "description": "A01, A04, A05, A08, A13, A14, A28, A31"
+      },
+      {
+        "value": "ADT_A02",
+        "description": "A02, A21, A22, A23, A25, A26, A27, A29, A32, A33"
+      },
+      {
+        "value": "ADT_A03",
+        "description": "A03"
+      },
+      {
+        "value": "ADT_A06",
+        "description": "A06, A07"
+      },
+      {
+        "value": "ADT_A09",
+        "description": "A09, A10, A11, A15"
+      },
+      {
+        "value": "ADT_A12",
+        "description": "A12"
+      },
+      {
+        "value": "ADT_A16",
+        "description": "A16"
+      },
+      {
+        "value": "ADT_A17",
+        "description": "A17"
+      },
+      {
+        "value": "ADT_A18",
+        "description": "A18"
+      },
+      {
+        "value": "ADT_A20",
+        "description": "A20"
+      },
+      {
+        "value": "ADT_A24",
+        "description": "A24"
+      },
+      {
+        "value": "ADT_A28",
+        "description": "A28, A31"
+      },
+      {
+        "value": "ADT_A30",
+        "description": "A30, A34, A35, 136, A46, A47, A48, A49"
+      },
+      {
+        "value": "ADT_A37",
+        "description": "A37"
+      },
+      {
+        "value": "ADT_A38",
+        "description": "A38"
+      },
+      {
+        "value": "ADT_A39",
+        "description": "A39, A40, A41, A42"
+      },
+      {
+        "value": "ADT_A43",
+        "description": "A43, A44"
+      },
+      {
+        "value": "ADT_A45",
+        "description": "A45"
+      },
+      {
+        "value": "ADT_A50",
+        "description": "A50, A51"
+      },
+      {
+        "value": "ARD_A19",
+        "description": "A19"
+      },
+      {
+        "value": "BAR_P01",
+        "description": "P01, P05"
+      },
+      {
+        "value": "BAR_P02",
+        "description": "P02"
+      },
+      {
+        "value": "BAR_P06",
+        "description": "P06"
+      },
+      {
+        "value": "CRM_C01",
+        "description": "C01, C02, C03, C04, C05, C06, C07, C08"
+      },
+      {
+        "value": "CSU_C09",
+        "description": "C09, C10, C11, C12"
+      },
+      {
+        "value": "DFT_P03",
+        "description": "P03"
+      },
+      {
+        "value": "DOC_T12",
+        "description": "T12"
+      },
+      {
+        "value": "DSR_Q01",
+        "description": "Q01"
+      },
+      {
+        "value": "DSR_Q03",
+        "description": "Q03"
+      },
+      {
+        "value": "EDR_R07",
+        "description": "R07"
+      },
+      {
+        "value": "EQQ_Q04",
+        "description": "Q04"
+      },
+      {
+        "value": "ERP_R09",
+        "description": "R09"
+      },
+      {
+        "value": "MDM_T01",
+        "description": "T01, T03, T05, T07, T09, T11"
+      },
+      {
+        "value": "MDM_T02",
+        "description": "T02, T04, T06, T08, T10"
+      },
+      {
+        "value": "MFD_P09",
+        "description": "P09"
+      },
+      {
+        "value": "MFK_M01",
+        "description": "M01, M03, M05, M06, M07, M08, M09, M10, M11"
+      },
+      {
+        "value": "MFN_M01",
+        "description": "M01"
+      },
+      {
+        "value": "MFN_M02",
+        "description": "M02"
+      },
+      {
+        "value": "MFN_M03",
+        "description": "M03"
+      },
+      {
+        "value": "MFN_M05",
+        "description": "M05"
+      },
+      {
+        "value": "MFN_M06",
+        "description": "M06"
+      },
+      {
+        "value": "MFN_M07",
+        "description": "M07"
+      },
+      {
+        "value": "MFN_M08",
+        "description": "M08"
+      },
+      {
+        "value": "MFN_M09",
+        "description": "M09"
+      },
+      {
+        "value": "MFN_M10",
+        "description": "M10"
+      },
+      {
+        "value": "MFN_M11",
+        "description": "M11"
+      },
+      {
+        "value": "ORF_R02",
+        "description": "R02, R04"
+      },
+      {
+        "value": "ORM__O01",
+        "description": "O01"
+      },
+      {
+        "value": "ORM_Q06",
+        "description": "Q06"
+      },
+      {
+        "value": "ORR_O02",
+        "description": "O02"
+      },
+      {
+        "value": "ORR_Q06",
+        "description": "Q06"
+      },
+      {
+        "value": "ORU_R01",
+        "description": "R01"
+      },
+      {
+        "value": "ORU_W01",
+        "description": "W01"
+      },
+      {
+        "value": "OSQ_Q06",
+        "description": "Q06"
+      },
+      {
+        "value": "OSR_Q06",
+        "description": "Q06"
+      },
+      {
+        "value": "PEX_P07",
+        "description": "P07, P08"
+      },
+      {
+        "value": "PGL_PC6",
+        "description": "PC6, PC7, PC8"
+      },
+      {
+        "value": "PIN_107",
+        "description": "I07"
+      },
+      {
+        "value": "PPG_PCG",
+        "description": "PCC, PCH, PCJ"
+      },
+      {
+        "value": "PPP_PCB",
+        "description": "PCB, PCD"
+      },
+      {
+        "value": "PPR_PC1",
+        "description": "PC1, PC2, PC3"
+      },
+      {
+        "value": "PPT_PCL",
+        "description": "PCL"
+      },
+      {
+        "value": "PPV_PCA",
+        "description": "PCA"
+      },
+      {
+        "value": "PRR_PC5",
+        "description": "PC5"
+      },
+      {
+        "value": "PTR_PCF",
+        "description": "PCF"
+      },
+      {
+        "value": "QCK_Q02",
+        "description": "Q02"
+      },
+      {
+        "value": "QRY_A19",
+        "description": "A19"
+      },
+      {
+        "value": "QRY_PC4",
+        "description": "PC4, PC9, PCE, PCK"
+      },
+      {
+        "value": "QRY_Q01",
+        "description": "Q01"
+      },
+      {
+        "value": "QRY_Q02",
+        "description": "Q02"
+      },
+      {
+        "value": "QRY_R02",
+        "description": "R02, R04"
+      },
+      {
+        "value": "QRY_T12",
+        "description": "T12"
+      },
+      {
+        "value": "RAR_RAR",
+        "description": "RAR"
+      },
+      {
+        "value": "RAS_O01",
+        "description": "O01"
+      },
+      {
+        "value": "RAS_O02",
+        "description": "O022"
+      },
+      {
+        "value": "RCI_I05",
+        "description": "I05"
+      },
+      {
+        "value": "RCL_I06",
+        "description": "I06"
+      },
+      {
+        "value": "RDE_O01",
+        "description": "O01"
+      },
+      {
+        "value": "RDR_RDR",
+        "description": "RDR"
+      },
+      {
+        "value": "RDS_O01",
+        "description": "O01"
+      },
+      {
+        "value": "REF_I12",
+        "description": "I12, I13, I14, I15"
+      },
+      {
+        "value": "RER_RER",
+        "description": "RER"
+      },
+      {
+        "value": "RGR_RGR",
+        "description": "RGR"
+      },
+      {
+        "value": "RGV_O01",
+        "description": "O01"
+      },
+      {
+        "value": "RPA_I08",
+        "description": "I08, I09. I10, 1II"
+      },
+      {
+        "value": "RPI_I0I",
+        "description": "I01, I04"
+      },
+      {
+        "value": "RPL_I02",
+        "description": "I02"
+      },
+      {
+        "value": "RPR_I03",
+        "description": "I03"
+      },
+      {
+        "value": "RQA_I08",
+        "description": "I08, I09, I10, I11"
+      },
+      {
+        "value": "RQC_I05",
+        "description": "I05"
+      },
+      {
+        "value": "RQC_I06",
+        "description": "I06"
+      },
+      {
+        "value": "RQI_I0I",
+        "description": "I01, I02, I03"
+      },
+      {
+        "value": "RQP_I04",
+        "description": "I04"
+      },
+      {
+        "value": "RQQ_Q09",
+        "description": "Q09"
+      },
+      {
+        "value": "RRA_O02",
+        "description": "O02"
+      },
+      {
+        "value": "RRD_O02",
+        "description": "O02"
+      },
+      {
+        "value": "RRE_O01",
+        "description": "O01"
+      },
+      {
+        "value": "RRG_O02",
+        "description": "O02"
+      },
+      {
+        "value": "RRI_I12",
+        "description": "I12, I13, I14, I15"
+      },
+      {
+        "value": "RROR_ROR",
+        "description": "ROR"
+      },
+      {
+        "value": "SIIU_S12",
+        "description": "S12, S13, S14, S15, S16, S17, S18, S19, S20, S21, S22, S23, S24, S26"
+      },
+      {
+        "value": "SPQ_Q08",
+        "description": "Q08"
+      },
+      {
+        "value": "SQM_S25",
+        "description": "S25"
+      },
+      {
+        "value": "SQR_S25",
+        "description": "S25"
+      },
+      {
+        "value": "SRM_S01",
+        "description": "S01, S02, S03, S04, S05, S06, S07, S08, S09, S10, S11"
+      },
+      {
+        "value": "SRM_T12",
+        "description": "T12"
+      },
+      {
+        "value": "SRR_S01",
+        "description": "S01, S02, S03, S04, S05, S06, S07, S08, S09, S10, S11"
+      },
+      {
+        "value": "SRR_T12",
+        "description": "T12"
+      },
+      {
+        "value": "SUR_P09",
+        "description": "P09"
+      },
+      {
+        "value": "TBR_R09",
+        "description": "R09"
+      },
+      {
+        "value": "UDM_Q05",
+        "description": "Q05"
+      },
+      {
+        "value": "VQQ_Q07",
+        "description": "Q07"
+      },
+      {
+        "value": "VXQ_V01",
+        "description": "V01"
+      },
+      {
+        "value": "VXR_V03",
+        "description": "V03"
+      },
+      {
+        "value": "VXU_V04",
+        "description": "V04"
+      },
+      {
+        "value": "VXX_V02",
+        "description": "V02"
+      },
+      {
+        "value": ""
+      }
+    ]
+  },
+  "dataTypes": {
+    "IS": {
+      "separator": "",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": -1,
+          "parts": [
+            {
+              "mandatory": true,
+              "name": "",
+              "type": "string",
+              "length": 26
+            }
+          ]
+        }
+      }
+    },
+    "ID": {
+      "separator": "",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": -1,
+          "parts": [
+            {
+              "mandatory": true,
+              "name": "",
+              "type": "string",
+              "length": 26
+            }
+          ]
+        }
+      }
+    },
+    "HierarchicalData": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": -1,
+          "parts": [
+            {
+              "name": "namespaceId",
+              "type": "IS",
+              "table": "0300",
+              "length": -1
+            },
+            {
+              "name": "universalId",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "universalIdType",
+              "type": "ID",
+              "table": "0301",
+              "length": -1
+            }
+          ]
+        }
+      }
+    },
+    "TimeStamp": {
+      "separator": "",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": -1,
+          "parts": [
+            {
+              "mandatory": true,
+              "name": "",
+              "type": "string",
+              "length": 26
+            }
+          ]
+        }
+      }
+    },
+    "MessageType" : {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": 7,
+          "parts": [
+            {
+              "name": "messageType",
+              "type": "ID",
+              "table": "0076",
+              "length": -1
+            },
+            {
+              "name": "triggerEvent",
+              "type": "ID",
+              "table": "0003",
+              "length": -1
+            },
+            {
+              "name": "messageStructure",
+              "type": "ID",
+              "table": "0354",
+              "length": -1
+            }
+          ]
+        }
+      }
+    },
+    "ProcessingType": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": -1,
+          "parts": [
+            {
+              "name": "processingId",
+              "type": "ID",
+              "table": "0103",
+              "length": -1
+            },
+            {
+              "name": "processingMode",
+              "type": "ID",
+              "table": "0207",
+              "length": -1
+            }
+          ]
+        }
+      }
+    },
+    "CodedElement": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": -1,
+          "parts": [
+            {
+              "name": "identifier",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "text",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "nameOfCodingSystem",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "alternateComponents",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "alternateText",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "nameOfAlternateCodingSystem",
+              "type": "string",
+              "length": -1
+            }
+          ]
+        }
+      }
+    },
+    "VersionId": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": 7,
+          "parts": [
+            {
+              "name": "versionId",
+              "type": "ID",
+              "table": "0104",
+              "length": -1
+            },
+            {
+              "name": "internationalizationCode",
+              "type": "CodedElement",
+              "length": -1
+            },
+            {
+              "name": "internationalVersionId",
+              "type": "CodedElement",
+              "length": -1
+            }
+          ]
+        }
+      }
+    },
+    "MSH": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": -1,
+          "parts": [
+            {
+              "name": "hl7SegmentName",
+              "type": "string",
+              "table": "0076",
+              "length": 3
+            },
+            {
+              "name": "sendingApplication",
+              "type": "HierarchicalData",
+              "length": 180
+            },
+            {
+              "name": "sendingFacility",
+              "type": "HierarchicalData",
+              "length": 180
+            },
+            {
+              "name": "receivingApplication",
+              "type": "HierarchicalData",
+              "length": 180
+            },
+            {
+              "name": "receivingFacility",
+              "type": "HierarchicalData",
+              "length": 180
+            },
+            {
+              "name": "DateOrTimeOfMessage",
+              "type": "TimeStamp",
+              "length": 4
+            },
+            {
+              "name": "security",
+              "type": "string",
+              "length": 40
+            },
+            {
+              "mandatory": true,
+              "name": "messageType",
+              "type": "MessageType",
+              "length": 7
+            },
+            {
+              "mandatory": true,
+              "name": "messageControlId",
+              "type": "string",
+              "length": 20
+            },
+            {
+              "mandatory": true,
+              "name": "processingId",
+              "type": "ProcessingType",
+              "length": 3
+            },
+            {
+              "mandatory": true,
+              "name": "versionId",
+              "type": "VersionId",
+              "length": 60
+            }
+          ]
+        }
+      }
+    },
+    "HL7": {
+      "separator": "\u000D",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": -1,
+          "parts": [
+            {
+              "mandatory": true,
+              "name": "msh",
+              "type": "MSH",
+              "length": -1
+            }
+          ]
+        }
+      }
+    }
+  }
+}
