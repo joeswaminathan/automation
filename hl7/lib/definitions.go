@@ -32,6 +32,7 @@ type DataTypeVersion struct {
 
 type DataType struct {
     Separator string                        `json:"separator"`
+    PartId string                           `json:"partId"`
     Versions map[string]*DataTypeVersion    `json:"versions"`
 }
 

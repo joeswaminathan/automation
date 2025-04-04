@@ -10,7 +10,7 @@ var typeIsStruct = make(map[string]bool)
 
 func (def *Definitions) defineType(dtn string) error {
     var typeDef strings.Builder
-
+    //fmt.Printf("--- Definining %s ---\n", dtn)
     if _, ok := typeIsStruct[dtn]; ok {
         //fmt.Printf("// %s is already defined\n", dtn)
         return nil
@@ -31,7 +31,7 @@ func (def *Definitions) defineType(dtn string) error {
             typeDef.WriteString(fmt.Sprintf("struct {\n"))
             indent = "    "
         }
-        for _, part := range vdt.Parts {
+        for idx, part := range vdt.Parts {
             repeat := ""
             if part.Repeats {
                 repeat = "[]"
@@ -54,7 +54,20 @@ func (def *Definitions) defineType(dtn string) error {
             typeDef.WriteString(fmt.Sprintf("%s%s %s%s%s",
                        indent, name, repeat, pointer, part.Type))
             if dt.Separator != "" {
-                typeDef.WriteString(fmt.Sprintf(" `json:\"%s\"`", part.Name))
+                typeDef.WriteString(fmt.Sprintf(" `json:\"%s\"", part.Name))
+                if dt.PartId == "type" {
+                    typeDef.WriteString(fmt.Sprintf(" hl7:\"part=%s", part.Type))
+                } else {
+                    typeDef.WriteString(fmt.Sprintf(" hl7:\"part=%d", idx+1))
+                }
+                if part.Length != 0 {
+                    typeDef.WriteString(fmt.Sprintf(" length=%d", part.Length))
+                }
+                if part.TableId != "" {
+                    typeDef.WriteString(fmt.Sprintf(" table=%s", part.TableId))
+                }
+                typeDef.WriteString(fmt.Sprintf("\"`"))
+
             }
             typeDef.WriteString(fmt.Sprintf("\n"))
         }
@@ -64,6 +77,7 @@ func (def *Definitions) defineType(dtn string) error {
         typeDef.WriteString(fmt.Sprintf("\n"))
     }
     typeIsStruct[dtn] = (dt.Separator != "")
+    //fmt.Printf("--- Defined %s ---\n", dtn)
     fmt.Println(typeDef.String())
     return nil
 }
