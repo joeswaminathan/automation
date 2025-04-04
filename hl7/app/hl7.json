@@ -1555,6 +1555,23 @@
         }
       }
     },
+    "TelephoneNumber": {
+      "separator": "",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": -1,
+          "parts": [
+            {
+              "mandatory": true,
+              "name": "",
+              "type": "string",
+              "length": -1
+            }
+          ]
+        }
+      }
+    },
     "ID": {
       "separator": "",
       "versions": {
@@ -1572,7 +1589,24 @@
         }
       }
     },
-    "HierarchicalData": {
+    "Date": {
+      "separator": "",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": -1,
+          "parts": [
+            {
+              "mandatory": true,
+              "name": "",
+              "type": "string",
+              "length": 8
+            }
+          ]
+        }
+      }
+    },
+    "HierarchicDesignator": {
       "separator": ".",
       "versions": {
         "2.3.1": {
@@ -1600,7 +1634,7 @@
         }
       }
     },
-    "TimeStamp": {
+    "DateTime": {
       "separator": "",
       "versions": {
         "2.3.1": {
@@ -1663,6 +1697,62 @@
               "name": "processingMode",
               "type": "ID",
               "table": "0207",
+              "length": -1
+            }
+          ]
+        }
+      }
+    },
+    "CodedWithExceptions": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": -1,
+          "parts": [
+            {
+              "name": "identifier",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "text",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "nameOfCodingSystem",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "alternateIdentifier",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "alternateText",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "nameOfAlternateCodingSystem",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "codingSystemVersionId",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "alternateCodingSystemVersionId",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "originalText",
+              "type": "string",
               "length": -1
             }
           ]
@@ -1737,6 +1827,552 @@
         }
       }
     },
+    "FamilyName": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": 194,
+          "parts": [
+            {
+              "mandatory": true,
+              "name": "surname",
+              "type": "string",
+              "length": 50
+            },
+            {
+              "name": "ownSurnamePrefix",
+              "type": "string",
+              "length": 20
+            },
+            {
+              "name": "ownSurname",
+              "type": "string",
+              "length": 50
+            },
+            {
+              "name": "surnamePrefixFromPartnerSpouse",
+              "type": "string",
+              "length": 20
+            },
+            {
+              "name": "surnameFromPartnerSpouse",
+              "type": "string",
+              "length": 50
+            }
+          ]
+        }
+      }
+    },
+    "DateRange": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": 49,
+          "parts": [
+            {
+              "name": "rangeStart",
+              "type": "DateTime",
+              "length": 24
+            },
+            {
+              "name": "rangeEnd",
+              "type": "DateTime",
+              "length": 24
+            }
+          ]
+        }
+      }
+    },
+    "StreetAddress": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": 184,
+          "parts": [
+            {
+              "name": "streetOrMailingAddress",
+              "type": "string",
+              "length": 120
+            },
+            {
+              "name": "streetName",
+              "type": "string",
+              "length": 50
+            },
+            {
+              "name": "dwellingNumber",
+              "type": "string",
+              "length": 12
+            }
+          ]
+        }
+      }
+    },
+    "DriversLicenseNumber": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": -1,
+          "parts": [
+            {
+              "name": "driverLicenseNumber",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "IssuingStateProvinceCountry",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "expirationDate",
+              "type": "DateTime",
+              "length": -1
+            }
+          ]
+        }
+      }
+    },
+    "ExtendedTelecommunicationNumber": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": -1,
+          "parts": [
+            {
+              "name": "telephoneNumber",
+              "type": "TelephoneNumber",
+              "length": -1
+            },
+            {
+              "name": "telecommunicationUseCode",
+              "type": "ID",
+              "table": "0201",
+              "length": -1
+            },
+            {
+              "name": "telecommunicationEquipmentType",
+              "type": "ID",
+              "table": "0202",
+              "length": -1
+            },
+            {
+              "name": "emailAddress",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "countryCode",
+              "type": "int",
+              "length": -1
+            },
+            {
+              "name": "areaCode",
+              "type": "int",
+              "length": -1
+            },
+            {
+              "name": "phoneNumber",
+              "type": "int",
+              "length": -1
+            },
+            {
+              "name": "extension",
+              "type": "int",
+              "length": -1
+            },
+            {
+              "name": "anyText",
+              "type": "string",
+              "length": -1
+            }
+          ]
+        }
+      }
+    },
+    "EntityIdentifier": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": 427,
+          "parts": [
+            {
+              "name": "entityIdentifier",
+              "type": "string",
+              "length": 199
+            },
+            {
+              "name": "namespaceId",
+              "type": "IS",
+              "length": 20
+            },
+            {
+              "name": "universalId",
+              "type": "string",
+              "length": 199
+            },
+            {
+              "name": "universalIdType",
+              "type": "ID",
+              "length": 6
+            }
+          ]
+        }
+      }
+    },
+    "ExtendedAddress": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": 2915,
+          "parts": [
+            {
+              "name": "streetAddress",
+              "type": "StreetAddress",
+              "length": 184
+            },
+            {
+              "name": "otherDestination",
+              "type": "string",
+              "length": 120
+            },
+            {
+              "name": "city",
+              "type": "string",
+              "length": 50
+            },
+            {
+              "name": "stateOrProvince",
+              "type": "string",
+              "length": 50
+            },
+            {
+              "name": "zipOrPostalCode",
+              "type": "string",
+              "length": 12
+            },
+            {
+              "name": "country",
+              "type": "ID",
+              "table": "0399",
+              "length": 3
+            },
+            {
+              "name": "addressType",
+              "type": "ID",
+              "table": "0190",
+              "length": 3
+            },
+            {
+              "name": "otherGeographicDesignation",
+              "type": "string",
+              "length": 50
+            },
+            {
+              "name": "CountyOrParishCode",
+              "type": "IS",
+              "table": "0289",
+              "length": 20
+            },
+            {
+              "name": "censusTract",
+              "type": "IS",
+              "table": "0288",
+              "length": 20
+            },
+            {
+              "name": "addressRepresentationCode",
+              "type": "ID",
+              "table": "0465",
+              "length": 1
+            },
+            {
+              "name": "addressValidtyRange",
+              "type": "DateRange",
+              "length": 49
+            },
+            {
+              "name": "effectiveDate",
+              "type": "DateTime",
+              "length": 24
+            },
+            {
+              "name": "expirationDate",
+              "type": "DateTime",
+              "length": 24
+            },
+            {
+              "name": "expirationReason",
+              "type": "CodedWithExceptions",
+              "table": "0616",
+              "length": 705
+            },
+            {
+              "name": "temporaryIndicator",
+              "type": "ID",
+              "table": "0136",
+              "length": 1
+            },
+            {
+              "name": "busAddressIndicator",
+              "type": "ID",
+              "table": "0136",
+              "length": 1
+            },
+            {
+              "name": "addressUsage",
+              "type": "ID",
+              "table": "0617",
+              "length": 44
+            },
+            {
+              "name": "addresse",
+              "type": "string",
+              "length": 199
+            },
+            {
+              "name": "comment",
+              "type": "string",
+              "length": 199
+            },
+            {
+              "name": "preferenceOrder",
+              "type": "int",
+              "length": 2
+            },
+            {
+              "name": "protectionCode",
+              "type": "CodedWithExceptions",
+              "table": "0618",
+              "length": 705
+            },
+            {
+              "name": "addressIdentifier",
+              "type": "EntityIdentifier",
+              "length": 427
+            }
+          ]
+        }
+      }
+    },
+    "ExtendedPersonName": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": 1317,
+          "parts": [
+            {
+              "name": "familyName",
+              "type": "FamilyName",
+              "length": 194
+            },
+            {
+              "name": "givenName",
+              "type": "string",
+              "length": 30
+            },
+            {
+              "name": "secondName",
+              "type": "string",
+              "length": 30
+            },
+            {
+              "name": "suffix",
+              "type": "string",
+              "length": 20
+            },
+            {
+              "name": "prefix",
+              "type": "string",
+              "length": 20
+            },
+            {
+              "name": "degree",
+              "type": "IS",
+              "table": "0360",
+              "length": 6
+            },
+            {
+              "name": "nameTypeCode",
+              "type": "ID",
+              "table": "0200",
+              "length": 1
+            },
+            {
+              "name": "nameRepresentationCode",
+              "type": "ID",
+              "table": "0465",
+              "length": 1
+            },
+            {
+              "name": "nameContext",
+              "type": "CodedWithExceptions",
+              "table": "0448",
+              "length": 3
+            },
+            {
+              "name": "nameValidityRange",
+              "type": "DateRange",
+              "length": 227
+            },
+            {
+              "name": "nameAssembleOrder",
+              "type": "ID",
+              "table": "0444",
+              "length": -1
+            },
+            {
+              "name": "effectiveDate",
+              "type": "DateTime",
+              "length": 24
+            },
+            {
+              "name": "expirationDate",
+              "type": "DateTime",
+              "length": 24
+            },
+            {
+              "name": "professionalSuffix",
+              "type": "string",
+              "length": 199
+            }
+          ]
+        }
+      }
+    },
+    "ExtendedCompositeID": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": 1916,
+          "parts": [
+            {
+              "mandatory": true,
+              "name": "idNumber",
+              "type": "string",
+              "length": 15
+            },
+            {
+              "name": "identifierCheckDigit",
+              "type": "string",
+              "length": 4
+            },
+            {
+              "name": "checkDigitScheme",
+              "type": "ID",
+              "table": "0061",
+              "length": 3
+            },
+            {
+              "name": "assigningAuthority",
+              "type": "HierarchicDesignator",
+              "table": "0363",
+              "length": 227
+            },
+            {
+              "name": "identifierTypeCode",
+              "type": "ID",
+              "table": "0203",
+              "length": 5
+            },
+            {
+              "name": "assigningFacility",
+              "type": "HierarchicDesignator",
+              "length": 227
+            },
+            {
+              "name": "effectiveDate",
+              "type": "Date",
+              "length": 8
+            },
+            {
+              "name": "expirationDate",
+              "type": "Date",
+              "length": 8
+            },
+            {
+              "name": "assigningJurisdiction",
+              "type": "CodedWithExceptions",
+              "length": 705
+            },
+            {
+              "name": "assigningAgencyOrDepartment",
+              "type": "CodedWithExceptions",
+              "length": 705
+            }
+          ]
+        }
+      }
+    },
+    "ExtendedCompositeNameIdForOrganizations": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": 570,
+          "parts": [
+            {
+              "name": "organizationName",
+              "type": "string",
+              "length": 50
+            },
+            {
+              "name": "organizationNameTypeCode",
+              "type": "IS",
+              "table": "0204",
+              "length": 20
+            },
+            {
+              "name": "idNumber",
+              "type": "string",
+              "length": -1
+            },
+            {
+              "name": "checkDigitScheme",
+              "type": "ID",
+              "table": "0061",
+              "length": 3
+            },
+            {
+              "name": "assigningAuthority",
+              "type": "HierarchicDesignator",
+              "table": "0363",
+              "length": 227
+            },
+            {
+              "name": "identifierTypeCode",
+              "type": "ID",
+              "length": 5
+            },
+            {
+              "name": "assigningFacility",
+              "type": "HierarchicDesignator",
+              "length": 227
+            },
+            {
+              "name": "nameRepresentationCode",
+              "type": "ID",
+              "table": "0465",
+              "length": 1
+            },
+            {
+              "name": "organizationIdentifier",
+              "type": "string",
+              "length": 20
+            }
+          ]
+        }
+      }
+    },
     "MSH": {
       "separator": ".",
       "versions": {
@@ -1745,34 +2381,42 @@
           "length": -1,
           "parts": [
             {
+              "mandatory": true,
               "name": "hl7SegmentName",
               "type": "string",
               "table": "0076",
               "length": 3
             },
             {
+              "mandatory": true,
+              "name": "encodingCharacters",
+              "type": "string",
+              "length": 4
+            },
+            {
               "name": "sendingApplication",
-              "type": "HierarchicalData",
+              "type": "HierarchicDesignator",
               "length": 180
             },
             {
               "name": "sendingFacility",
-              "type": "HierarchicalData",
+              "type": "HierarchicDesignator",
               "length": 180
             },
             {
               "name": "receivingApplication",
-              "type": "HierarchicalData",
+              "type": "HierarchicDesignator",
               "length": 180
             },
             {
               "name": "receivingFacility",
-              "type": "HierarchicalData",
+              "type": "HierarchicDesignator",
               "length": 180
             },
             {
               "name": "DateOrTimeOfMessage",
-              "type": "TimeStamp",
+              "type": "DateTime",
+              "repeats": true,
               "length": 4
             },
             {
@@ -1803,6 +2447,310 @@
               "name": "versionId",
               "type": "VersionId",
               "length": 60
+            },
+            {
+              "name": "sequenceNumber",
+              "type": "int",
+              "length": 15
+            },
+            {
+              "name": "continuationPointer",
+              "type": "string",
+              "length": 180
+            },
+            {
+              "name": "acceptAcknowledgementType",
+              "type": "ID",
+              "table": "0155",
+              "length": 2
+            },
+            {
+              "name": "countryCode",
+              "type": "ID",
+              "table": "399",
+              "length": 3
+            },
+            {
+              "name": "characterSet",
+              "type": "ID",
+              "table": "0211",
+              "length": 16
+            },
+            {
+              "name": "principalLanguageOfMessage",
+              "type": "CodedWithExceptions",
+              "table": "0155",
+              "length": 250
+            },
+            {
+              "name": "alternateCharacterSetHandling",
+              "type": "ID",
+              "table": "0356",
+              "length": 20
+            },
+            {
+              "name": "messageProfileIdentifier",
+              "type": "EntityIdentifier",
+              "length": 427
+            },
+            {
+              "name": "sendingResponseOrganization",
+              "type": "ExtendedCompositeNameIdForOrganizations",
+              "length": 567
+            },
+            {
+              "name": "receivingResponseOrganization",
+              "type": "ExtendedCompositeNameIdForOrganizations",
+              "length": 567
+            },
+            {
+              "name": "sendingNetworkAddress",
+              "type": "HierarchicDesignator",
+              "length": 227
+            },
+            {
+              "name": "receivingNetworkAddress",
+              "type": "HierarchicDesignator",
+              "length": 227
+            }
+          ]
+        }
+      }
+    },
+    "PID": {
+      "separator": ".",
+      "versions": {
+        "2.3.1": {
+          "appliesTo": "equalOrGreater",
+          "length": -1,
+          "parts": [
+            {
+              "mandatory": true,
+              "name": "hl7SegmentName",
+              "type": "string",
+              "table": "0076",
+              "length": 3
+            },
+            {
+              "name": "SetId",
+              "type": "int",
+              "length": 4
+            },
+            {
+              "name": "patientId",
+              "type": "ExtendedCompositeID",
+              "length": 20
+            },
+            {
+              "mandatory": true,
+              "name": "patientIdentifierList",
+              "type": "ExtendedCompositeID",
+              "_comment":"According to standards this repeats, but for Larkins it is not",
+              "repeats": false,
+              "length": 250
+            },
+            {
+              "mandatory": true,
+              "name": "alternatePatientId",
+              "type": "ExtendedCompositeID",
+              "repeats": true,
+              "length": 250
+            },
+            {
+              "mandatory": true,
+              "name": "patientName",
+              "type": "ExtendedPersonName",
+              "repeats": true,
+              "length": 180
+            },
+            {
+              "name": "mothersMaidenName",
+              "type": "ExtendedPersonName",
+              "repeats": true,
+              "length": 180
+            },
+            {
+              "name": "dateTimeOfBirth",
+              "type": "DateTime",
+              "length": 24
+            },
+            {
+              "name": "administrativeSex",
+              "type": "IS",
+              "table": "0001",
+              "length": 1
+            },
+            {
+              "name": "patientAlias",
+              "type": "ExtendedPersonName",
+              "length": 250
+            },
+            {
+              "name": "race",
+              "type": "CodedWithExceptions",
+              "table": "0005",
+              "length": 705
+            },
+            {
+              "name": "patientAddress",
+              "type": "ExtendedAddress",
+              "length": 250
+            },
+            {
+              "name": "countyCode",
+              "type": "IS",
+              "table": "0289",
+              "length": 4
+            },
+            {
+              "name": "phoneNumberHome",
+              "type": "ExtendedTelecommunicationNumber",
+              "length": 250
+            },
+            {
+              "name": "PhoneNumberBusiness",
+              "type": "ExtendedTelecommunicationNumber",
+              "length": 250
+            },
+            {
+              "name": "primaryLanguage",
+              "type": "CodedWithExceptions",
+              "table": "0296",
+              "length": 705
+            },
+            {
+              "name": "maritalStatus",
+              "type": "CodedWithExceptions",
+              "table": "0002",
+              "length": 705
+            },
+            {
+              "name": "religion",
+              "type": "CodedWithExceptions",
+              "table": "0006",
+              "length": 705
+            },
+            {
+              "name": "patientAccountNumber",
+              "type": "ExtendedCompositeID",
+              "length": 250
+            },
+            {
+              "name": "socialSecurityNumber",
+              "type": "string",
+              "length": 16
+            },
+            {
+              "name": "driversLicenseNumber",
+              "type": "DriversLicenseNumber",
+              "length": 25
+            },
+            {
+              "name": "MothersIdentifier",
+              "type": "ExtendedCompositeID",
+              "length": 250
+            },
+            {
+              "name": "ethnicGroup",
+              "type": "ExtendedCompositeID",
+              "table": "0189",
+              "length": 1
+            },
+            {
+              "name": "birthPlace",
+              "type": "string",
+              "length": 250
+            },
+            {
+              "name": "multipleBirthIndicator",
+              "type": "ID",
+              "table": "0136",
+              "length": 1
+            },
+            {
+              "name": "birthOrder",
+              "type": "uint16",
+              "length": 2
+            },
+            {
+              "name": "citizenship",
+              "type": "CodedWithExceptions",
+              "table": "0171",
+              "length": 705
+            },
+            {
+              "name": "veteransMilitaryStatus",
+              "type": "CodedWithExceptions",
+              "table": "0172",
+              "length": 705
+            },
+            {
+              "name": "nationality",
+              "type": "CodedWithExceptions",
+              "table": "0212",
+              "length": 705
+            },
+            {
+              "name": "patientDeathDateAndTime",
+              "type": "DateTime",
+              "length": 24
+            },
+            {
+              "name": "patientDeathIndicator",
+              "type": "ID",
+              "table": "0136",
+              "length": 1
+            },
+            {
+              "name": "idenityUnknownIndicator",
+              "type": "ID",
+              "table": "0136",
+              "length": 1
+            },
+            {
+              "name": "idenityReliabilityCode",
+              "type": "IS",
+              "table": "0445",
+              "length": 20
+            },
+            {
+              "name": "LastUpdateDateTime",
+              "type": "DateTime",
+              "length": 24
+            },
+            {
+              "name": "lastUpdateFacility",
+              "type": "HierarchicDesignator",
+              "length": 241
+            },
+            {
+              "name": "speciesCode",
+              "type": "CodedWithExceptions",
+              "table": "0446",
+              "length": 705
+            },
+            {
+              "name": "breedCode",
+              "type": "CodedWithExceptions",
+              "table": "0447",
+              "length": 705
+            },
+            {
+              "name": "strain",
+              "type": "string",
+              "length": 705
+            },
+            {
+              "name": "productionClassCode",
+              "type": "CodedWithExceptions",
+              "table": "0429",
+              "length": 705
+            },
+            {
+              "name": "tribalCitizenship",
+              "type": "CodedWithExceptions",
+              "table": "0171",
+              "length": 705
             }
           ]
         }
@@ -1810,6 +2758,7 @@
     },
     "HL7": {
       "separator": "\u000D",
+      "partId": "type",
       "versions": {
         "2.3.1": {
           "appliesTo": "equalOrGreater",
@@ -1819,6 +2768,12 @@
               "mandatory": true,
               "name": "msh",
               "type": "MSH",
+              "length": -1
+            },
+            {
+              "mandatory": true,
+              "name": "pid",
+              "type": "PID",
               "length": -1
             }
           ]
