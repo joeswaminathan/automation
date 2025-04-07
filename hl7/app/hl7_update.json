@@ -2726,6 +2726,56 @@
         }
       }
     },
+    "SPS": {
+    "separator": ".",
+    "versions": {
+      "2.6": {
+        "appliesTo": "equalOrGreater",
+        "totalFields": 7,
+        "parts": [
+          {
+            "name": "specimenSourceNameOrCode",
+            "type": "CWE",
+            "length": 705
+          },
+          {
+            "name": "additives",
+            "type": "CWE",
+            "length": 705,
+            "table": "0371"
+          },
+          {
+            "name": "specimenCollectionMethod",
+            "type": "TX",
+            "length": 200
+          },
+          {
+            "name": "bodySite",
+            "type": "CWE",
+            "length": 705,
+            "table": "0163"
+          },
+          {
+            "name": "siteModifier",
+            "type": "CWE",
+            "length": 705,
+            "table": "0495"
+          },
+          {
+            "name": "collectionMethodModifierCode",
+            "type": "CWE",
+            "length": 705
+          },
+          {
+            "name": "specimenRole",
+            "type": "CWE",
+            "length": 705,
+            "table": "0369"
+          }
+        ]
+      }
+    }
+  },
     "PL": {
       "_descriptions": "Person Location",
       "separator": ".",
