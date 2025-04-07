@@ -2726,6 +2726,144 @@
         }
       }
     },
+    "FC": {
+    "separator": ".",
+    "versions": {
+      "2.6": {
+        "appliesTo": "equalOrGreater",
+        "totalFields": 2,
+        "length": 45,
+        "parts": [
+          {
+            "name": "financialClassCode",
+            "type": "IS",
+            "length": 20,
+            "mandatory": true,
+            "table": "0064"
+          },
+          {
+            "name": "effectiveDate",
+            "type": "DTM",
+            "length": 24
+          }
+        ]
+      }
+    }
+  },
+    "DLD": {
+      "separator": ".",
+      "versions": {
+        "2.6": {
+          "appliesTo": "equalOrGreater",
+          "totalFields": 2,
+          "length": 730,
+          "parts": [
+            {
+              "name": "dischargeToLocation",
+              "type": "CWE",
+              "length": 705,
+              "mandatory": true,
+              "table": "0113"
+            },
+            {
+              "name": "effectiveDate",
+              "type": "DTM",
+              "length": 24
+            }
+          ]
+        }
+      }
+    },
+    "TX": {
+      "separator": "",
+      "versions": {
+        "2.6": {
+          "appliesTo": "equalOrGreater",
+          "length": 65536,
+          "parts": [
+            {
+              "mandatory": true,
+              "name": "",
+              "type": "string",
+              "length": -1
+            }
+          ]
+        }
+      }
+    },
+      "MOC": {
+      "separator": ".",
+      "versions": {
+        "2.6": {
+          "appliesTo": "equalOrGreater",
+          "totalFields": 2,
+          "length": 726,
+          "parts": [
+            {
+              "name": "monetaryAmount",
+              "type": "MO",
+              "length": 20
+            },
+            {
+              "name": "chargeCode",
+              "type": "CWE",
+              "length": 705
+            }
+          ]
+        }
+      }
+    },
+      "MO": {
+      "separator": ".",
+      "versions": {
+        "2.6": {
+          "appliesTo": "equalOrGreater",
+          "totalFields": 2,
+          "length": 20,
+          "parts": [
+            {
+              "name": "quantity",
+              "type": "NM",
+              "length": 16
+            },
+            {
+              "name": "denomination",
+              "type": "ID",
+              "length": 3,
+              "table": "ISO4217"
+            }
+          ]
+        }
+      }
+    },
+      "PRL": {
+      "separator": ".",
+      "versions": {
+        "2.6": {
+          "appliesTo": "equalOrGreater",
+          "totalFields": 3,
+          "length": 977,
+          "parts": [
+            {
+              "name": "parentObservationIdentifier",
+              "type": "CWE",
+              "length": 705,
+              "mandatory": true
+            },
+            {
+              "name": "parentObservationSubIdentifier",
+              "type": "ST",
+              "length": 20
+            },
+            {
+              "name": "parentObservationValueDescriptor",
+              "type": "TX",
+              "length": 250
+            }
+          ]
+        }
+      }
+    },
     "SPS": {
     "separator": ".",
     "versions": {

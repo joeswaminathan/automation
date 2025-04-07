@@ -1,14 +1,15 @@
 package main
 
 import (
-    "joeswaminathan.com/Edge_Ble/hl7"
-    "fmt"
+	"fmt"
+
+	"atian.com/hl7"
 )
 
 func main() {
-    def := &hl7.Definitions{}
+	def := &hl7.Definitions{}
 
-    def.Load("hl7.json")
-    fmt.Println("package hl7\n")
-    def.MakeTypes()
+	def.Load("hl7_update.json")
+	fmt.Println("package hl7\n")
+	def.MakeTypes()
 }
