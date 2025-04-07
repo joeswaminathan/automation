@@ -3631,7 +3631,7 @@
         }
       }
     },
-    "OBR": {
+      "OBR": {
       "separator": ".",
       "versions": {
         "2.6": {
@@ -3639,296 +3639,296 @@
           "totalFields": 50,
           "parts": [
             {
-              "name": "Set ID - OBR",
+              "name": "setIdObr",
               "type": "SI",
               "length": 4
             },
             {
-              "name": "Placer Order Number",
+              "name": "placerOrderNumber",
               "type": "EI",
               "length": 427,
               "mandatory": true
             },
             {
-              "name": "Filler Order Number",
+              "name": "fillerOrderNumber",
               "type": "EI",
               "length": 427,
               "mandatory": true
             },
             {
-              "name": "Universal Service Identifier",
+              "name": "universalServiceIdentifier",
               "type": "CWE",
               "length": 705,
               "mandatory": true
             },
             {
-              "name": "Priority",
+              "name": "priority",
               "type": "ID",
               "length": 2,
               "mandatory": true
             },
             {
-              "name": "Requested Date/Time",
+              "name": "requestedDateTime",
               "type": "DTM",
               "length": 24,
               "mandatory": true
             },
             {
-              "name": "Observation Date/Time",
+              "name": "observationDateTime",
               "type": "DTM",
               "length": 24,
               "mandatory": true
             },
             {
-              "name": "Observation End Date/Time",
+              "name": "observationEndDateTime",
               "type": "DTM",
               "length": 24
             },
             {
-              "name": "Collection Volume",
+              "name": "collectionVolume",
               "type": "CQ",
               "length": 722
             },
             {
-              "name": "Collector Identifier",
+              "name": "collectorIdentifier",
               "type": "XCN",
               "length": 3220,
               "repeats": true
             },
             {
-              "name": "Specimen Action Code",
+              "name": "specimenActionCode",
               "type": "ID",
               "length": 1,
               "table": "0065"
             },
             {
-              "name": "Danger Code",
+              "name": "dangerCode",
               "type": "CWE",
               "length": 705
             },
             {
-              "name": "Relevant Clinical Information",
+              "name": "relevantClinicalInformation",
               "type": "ST",
               "length": 300
             },
             {
-              "name": "Specimen Received Date/Time",
+              "name": "specimenReceivedDateTime",
               "type": "DTM",
               "length": 24,
               "mandatory": true
             },
             {
-              "name": "Specimen Source",
+              "name": "specimenSource",
               "type": "SPS",
               "length": 300,
               "mandatory": true
             },
             {
-              "name": "Ordering Provider",
+              "name": "orderingProvider",
               "type": "XCN",
               "length": 3220,
               "repeats": true
             },
             {
-              "name": "Order Callback Phone Number",
+              "name": "orderCallbackPhoneNumber",
               "type": "XTN",
               "length": 2743,
               "repeats": true
             },
             {
-              "name": "Placer Field 1",
+              "name": "placerField1",
               "type": "ST",
               "length": 199
             },
             {
-              "name": "Placer Field 2",
+              "name": "placerField2",
               "type": "ST",
               "length": 199
             },
             {
-              "name": "Filler Field 1",
+              "name": "fillerField1",
               "type": "ST",
               "length": 199
             },
             {
-              "name": "Filler Field 2",
+              "name": "fillerField2",
               "type": "ST",
               "length": 199
             },
             {
-              "name": "Results Rpt/Status Chng - Date/Time",
+              "name": "resultsRptStatusChngDateTime",
               "type": "DTM",
               "length": 24,
               "mandatory": true
             },
             {
-              "name": "Charge to Practice",
+              "name": "chargeToPractice",
               "type": "MOC",
               "length": 504
             },
             {
-              "name": "Diagnostic Serv Sect ID",
+              "name": "diagnosticServSectId",
               "type": "ID",
               "length": 10,
               "table": "0074"
             },
             {
-              "name": "Result Status",
+              "name": "resultStatus",
               "type": "ID",
               "length": 1,
               "mandatory": true,
               "table": "0123"
             },
             {
-              "name": "Parent Result",
+              "name": "parentResult",
               "type": "PRL",
               "length": 977
             },
             {
-              "name": "Quantity/Timing",
+              "name": "quantityTiming",
               "type": "TQ",
               "length": 705,
               "mandatory": true,
               "repeats": true
             },
             {
-              "name": "Result Copies To",
+              "name": "resultCopiesTo",
               "type": "XCN",
               "length": 3220,
               "repeats": true
             },
             {
-              "name": "Parent",
+              "name": "parent",
               "type": "EIP",
               "length": 855
             },
             {
-              "name": "Transportation Mode",
+              "name": "transportationMode",
               "type": "ID",
               "length": 20,
               "table": "0124"
             },
             {
-              "name": "Reason for Study",
+              "name": "reasonForStudy",
               "type": "CWE",
               "length": 705,
               "repeats": true
             },
             {
-              "name": "Principal Result Interpreter",
+              "name": "principalResultInterpreter",
               "type": "NDL",
               "length": 831,
               "mandatory": true,
               "repeats": true
             },
             {
-              "name": "Assistant Result Interpreter",
+              "name": "assistantResultInterpreter",
               "type": "NDL",
               "length": 831,
               "mandatory": true,
               "repeats": true
             },
             {
-              "name": "Technician",
+              "name": "technician",
               "type": "NDL",
               "length": 831,
               "mandatory": true,
               "repeats": true
             },
             {
-              "name": "Transcriptionist",
+              "name": "transcriptionist",
               "type": "NDL",
               "length": 831,
               "mandatory": true,
               "repeats": true
             },
             {
-              "name": "Scheduled Date/Time",
+              "name": "scheduledDateTime",
               "type": "DTM",
               "length": 24
             },
             {
-              "name": "Number of Sample Containers",
+              "name": "numberOfSampleContainers",
               "type": "NM",
               "length": 16
             },
             {
-              "name": "Transport Logistics of Collected Sample",
+              "name": "transportLogisticsOfCollectedSample",
               "type": "CWE",
               "length": 705,
               "repeats": true
             },
             {
-              "name": "Collector's Comment",
+              "name": "collectorsComment",
               "type": "CWE",
               "length": 705,
               "repeats": true
             },
             {
-              "name": "Transport Arrangement Responsibility",
+              "name": "transportArrangementResponsibility",
               "type": "CWE",
               "length": 705,
               "table": "0224"
             },
             {
-              "name": "Transport Arranged",
+              "name": "transportArranged",
               "type": "ID",
               "length": 30,
               "table": "0225"
             },
             {
-              "name": "Escort Required",
+              "name": "escortRequired",
               "type": "ID",
               "length": 1
             },
             {
-              "name": "Planned Patient Transport Comment",
+              "name": "plannedPatientTransportComment",
               "type": "CWE",
               "length": 705,
               "repeats": true
             },
             {
-              "name": "Procedure Code",
+              "name": "procedureCode",
               "type": "CNE",
               "length": 705,
               "table": "0088"
             },
             {
-              "name": "Procedure Code Modifier",
+              "name": "procedureCodeModifier",
               "type": "CNE",
               "length": 705,
               "repeats": true,
               "table": "0340"
             },
             {
-              "name": "Placer Supplemental Service Information",
+              "name": "placerSupplementalServiceInformation",
               "type": "CWE",
               "length": 705,
               "repeats": true,
               "table": "0411"
             },
             {
-              "name": "Filler Supplemental Service Information",
+              "name": "fillerSupplementalServiceInformation",
               "type": "CWE",
               "length": 705,
               "repeats": true,
               "table": "0411"
             },
             {
-              "name": "Medically Necessary Duplicate Procedure Reason",
+              "name": "medicallyNecessaryDuplicateProcedureReason",
               "type": "CWE",
               "length": 705,
               "mandatory": true,
               "table": "0476"
             },
             {
-              "name": "Result Handling",
+              "name": "resultHandling",
               "type": "IS",
               "length": 2,
               "table": "0507"
             },
             {
-              "name": "Parent Universal Service Identifier",
+              "name": "parentUniversalServiceIdentifier",
               "type": "CWE",
               "length": 705
             }
@@ -3936,320 +3936,320 @@
         }
       }
     },
-    "PV1": {
-      "separator": ".",
-      "versions": {
-        "2.6": {
-          "appliesTo": "equalOrGreater",
-          "totalFields": 52,
-          "length": 1200,
-          "parts": [
-            {
-              "name": "Set ID - PV1",
-              "type": "SI",
-              "length": 4
-            },
-            {
-              "name": "Patient Class",
-              "type": "IS",
-              "length": 1,
-              "mandatory": true,
-              "table": "0004"
-            },
-            {
-              "name": "Assigned Patient Location",
-              "type": "PL",
-              "length": 80
-            },
-            {
-              "name": "Admission Type",
-              "type": "IS",
-              "length": 2,
-              "table": "0007"
-            },
-            {
-              "name": "Preadmit Number",
-              "type": "CX",
-              "length": 250
-            },
-            {
-              "name": "Prior Patient Location",
-              "type": "PL",
-              "length": 80
-            },
-            {
-              "name": "Attending Doctor",
-              "type": "XCN",
-              "length": 250,
-              "repeats": true,
-              "table": "0010"
-            },
-            {
-              "name": "Referring Doctor",
-              "type": "XCN",
-              "length": 250,
-              "repeats": true,
-              "table": "0010"
-            },
-            {
-              "name": "Consulting Doctor",
-              "type": "XCN",
-              "length": 250,
-              "mandatory": true,
-              "repeats": true,
-              "table": "0010"
-            },
-            {
-              "name": "Hospital Service",
-              "type": "IS",
-              "length": 3,
-              "table": "0069"
-            },
-            {
-              "name": "Temporary Location",
-              "type": "PL",
-              "length": 80
-            },
-            {
-              "name": "Preadmit Test Indicator",
-              "type": "IS",
-              "length": 2,
-              "table": "0087"
-            },
-            {
-              "name": "Re-admission Indicator",
-              "type": "IS",
-              "length": 2,
-              "table": "0092"
-            },
-            {
-              "name": "Admit Source",
-              "type": "IS",
-              "length": 6,
-              "table": "0023"
-            },
-            {
-              "name": "Ambulatory Status",
-              "type": "IS",
-              "length": 2,
-              "repeats": true,
-              "table": "0009"
-            },
-            {
-              "name": "VIP Indicator",
-              "type": "IS",
-              "length": 2,
-              "table": "0099"
-            },
-            {
-              "name": "Admitting Doctor",
-              "type": "XCN",
-              "length": 250,
-              "repeats": true,
-              "table": "0010"
-            },
-            {
-              "name": "Patient Type",
-              "type": "IS",
-              "length": 2,
-              "table": "0018"
-            },
-            {
-              "name": "Visit Number",
-              "type": "CX",
-              "length": 250
-            },
-            {
-              "name": "Financial Class",
-              "type": "FC",
-              "length": 50,
-              "repeats": true
-            },
-            {
-              "name": "Charge Price Indicator",
-              "type": "IS",
-              "length": 2,
-              "table": "0032"
-            },
-            {
-              "name": "Courtesy Code",
-              "type": "IS",
-              "length": 2,
-              "table": "0045"
-            },
-            {
-              "name": "Credit Rating",
-              "type": "IS",
-              "length": 2,
-              "table": "0046"
-            },
-            {
-              "name": "Contract Code",
-              "type": "IS",
-              "length": 2,
-              "repeats": true,
-              "table": "0044"
-            },
-            {
-              "name": "Contract Effective Date",
-              "type": "DT",
-              "length": 8
-            },
-            {
-              "name": "Contract Amount",
-              "type": "NM",
-              "length": 12
-            },
-            {
-              "name": "Contract Period",
-              "type": "NM",
-              "length": 3
-            },
-            {
-              "name": "Interest Code",
-              "type": "IS",
-              "length": 2,
-              "table": "0073"
-            },
-            {
-              "name": "Transfer to Bad Debt Code",
-              "type": "IS",
-              "length": 4,
-              "table": "0110"
-            },
-            {
-              "name": "Transfer to Bad Debt Date",
-              "type": "DT",
-              "length": 8
-            },
-            {
-              "name": "Bad Debt Agency Code",
-              "type": "IS",
-              "length": 10,
-              "table": "0021"
-            },
-            {
-              "name": "Bad Debt Transfer Amount",
-              "type": "NM",
-              "length": 12,
-              "repeats": true
-            },
-            {
-              "name": "Bad Debt Recovery Amount",
-              "type": "NM",
-              "length": 12,
-              "repeats": true
-            },
-            {
-              "name": "Delete Account Indicator",
-              "type": "IS",
-              "length": 1,
-              "table": "0111"
-            },
-            {
-              "name": "Delete Account Date",
-              "type": "DT",
-              "length": 8
-            },
-            {
-              "name": "Discharge Disposition",
-              "type": "IS",
-              "length": 3,
-              "table": "0112"
-            },
-            {
-              "name": "Discharged to Location",
-              "type": "DLD",
-              "length": 47,
-              "table": "0114"
-            },
-            {
-              "name": "Diet Type",
-              "type": "CWE",
-              "length": 705
-            },
-            {
-              "name": "Servicing Facility",
-              "type": "IS",
-              "length": 2,
-              "table": "0115"
-            },
-            {
-              "name": "Bed Status",
-              "type": "IS",
-              "length": 1,
-              "mandatory": true,
-              "table": "0116"
-            },
-            {
-              "name": "Account Status",
-              "type": "IS",
-              "length": 2,
-              "table": "0117"
-            },
-            {
-              "name": "Pending Location",
-              "type": "PL",
-              "length": 80
-            },
-            {
-              "name": "Prior Temporary Location",
-              "type": "PL",
-              "length": 80
-            },
-            {
-              "name": "Admit Date/Time",
-              "type": "DTM",
-              "length": 24
-            },
-            {
-              "name": "Discharge Date/Time",
-              "type": "DTM",
-              "length": 24
-            },
-            {
-              "name": "Current Patient Balance",
-              "type": "NM",
-              "length": 12
-            },
-            {
-              "name": "Total Charges",
-              "type": "NM",
-              "length": 12
-            },
-            {
-              "name": "Total Adjustments",
-              "type": "NM",
-              "length": 12
-            },
-            {
-              "name": "Total Payments",
-              "type": "NM",
-              "length": 12
-            },
-            {
-              "name": "Alternate Visit ID",
-              "type": "CX",
-              "length": 250,
-              "table": "0326"
-            },
-            {
-              "name": "Visit Indicator",
-              "type": "IS",
-              "length": 1
-            },
-            {
-              "name": "Other Healthcare Provider",
-              "type": "XCN",
-              "length": 250,
-              "mandatory": true,
-              "repeats": true,
-              "table": "0010"
-            }
-          ]
+      "PV1": {
+        "separator": ".",
+        "versions": {
+          "2.6": {
+            "appliesTo": "equalOrGreater",
+            "totalFields": 52,
+            "length": 1200,
+            "parts": [
+              {
+                "name": "setIdPv1",
+                "type": "SI",
+                "length": 4
+              },
+              {
+                "name": "patientClass",
+                "type": "IS",
+                "length": 1,
+                "mandatory": true,
+                "table": "0004"
+              },
+              {
+                "name": "assignedPatientLocation",
+                "type": "PL",
+                "length": 80
+              },
+              {
+                "name": "admissionType",
+                "type": "IS",
+                "length": 2,
+                "table": "0007"
+              },
+              {
+                "name": "preadmitNumber",
+                "type": "CX",
+                "length": 250
+              },
+              {
+                "name": "priorPatientLocation",
+                "type": "PL",
+                "length": 80
+              },
+              {
+                "name": "attendingDoctor",
+                "type": "XCN",
+                "length": 250,
+                "repeats": true,
+                "table": "0010"
+              },
+              {
+                "name": "referringDoctor",
+                "type": "XCN",
+                "length": 250,
+                "repeats": true,
+                "table": "0010"
+              },
+              {
+                "name": "consultingDoctor",
+                "type": "XCN",
+                "length": 250,
+                "mandatory": true,
+                "repeats": true,
+                "table": "0010"
+              },
+              {
+                "name": "hospitalService",
+                "type": "IS",
+                "length": 3,
+                "table": "0069"
+              },
+              {
+                "name": "temporaryLocation",
+                "type": "PL",
+                "length": 80
+              },
+              {
+                "name": "preadmitTestIndicator",
+                "type": "IS",
+                "length": 2,
+                "table": "0087"
+              },
+              {
+                "name": "reAdmissionIndicator",
+                "type": "IS",
+                "length": 2,
+                "table": "0092"
+              },
+              {
+                "name": "admitSource",
+                "type": "IS",
+                "length": 6,
+                "table": "0023"
+              },
+              {
+                "name": "ambulatoryStatus",
+                "type": "IS",
+                "length": 2,
+                "repeats": true,
+                "table": "0009"
+              },
+              {
+                "name": "vipIndicator",
+                "type": "IS",
+                "length": 2,
+                "table": "0099"
+              },
+              {
+                "name": "admittingDoctor",
+                "type": "XCN",
+                "length": 250,
+                "repeats": true,
+                "table": "0010"
+              },
+              {
+                "name": "patientType",
+                "type": "IS",
+                "length": 2,
+                "table": "0018"
+              },
+              {
+                "name": "visitNumber",
+                "type": "CX",
+                "length": 250
+              },
+              {
+                "name": "financialClass",
+                "type": "FC",
+                "length": 50,
+                "repeats": true
+              },
+              {
+                "name": "chargePriceIndicator",
+                "type": "IS",
+                "length": 2,
+                "table": "0032"
+              },
+              {
+                "name": "courtesyCode",
+                "type": "IS",
+                "length": 2,
+                "table": "0045"
+              },
+              {
+                "name": "creditRating",
+                "type": "IS",
+                "length": 2,
+                "table": "0046"
+              },
+              {
+                "name": "contractCode",
+                "type": "IS",
+                "length": 2,
+                "repeats": true,
+                "table": "0044"
+              },
+              {
+                "name": "contractEffectiveDate",
+                "type": "DT",
+                "length": 8
+              },
+              {
+                "name": "contractAmount",
+                "type": "NM",
+                "length": 12
+              },
+              {
+                "name": "contractPeriod",
+                "type": "NM",
+                "length": 3
+              },
+              {
+                "name": "interestCode",
+                "type": "IS",
+                "length": 2,
+                "table": "0073"
+              },
+              {
+                "name": "transferToBadDebtCode",
+                "type": "IS",
+                "length": 4,
+                "table": "0110"
+              },
+              {
+                "name": "transferToBadDebtDate",
+                "type": "DT",
+                "length": 8
+              },
+              {
+                "name": "badDebtAgencyCode",
+                "type": "IS",
+                "length": 10,
+                "table": "0021"
+              },
+              {
+                "name": "badDebtTransferAmount",
+                "type": "NM",
+                "length": 12,
+                "repeats": true
+              },
+              {
+                "name": "badDebtRecoveryAmount",
+                "type": "NM",
+                "length": 12,
+                "repeats": true
+              },
+              {
+                "name": "deleteAccountIndicator",
+                "type": "IS",
+                "length": 1,
+                "table": "0111"
+              },
+              {
+                "name": "deleteAccountDate",
+                "type": "DT",
+                "length": 8
+              },
+              {
+                "name": "dischargeDisposition",
+                "type": "IS",
+                "length": 3,
+                "table": "0112"
+              },
+              {
+                "name": "dischargedToLocation",
+                "type": "DLD",
+                "length": 47,
+                "table": "0114"
+              },
+              {
+                "name": "dietType",
+                "type": "CWE",
+                "length": 705
+              },
+              {
+                "name": "servicingFacility",
+                "type": "IS",
+                "length": 2,
+                "table": "0115"
+              },
+              {
+                "name": "bedStatus",
+                "type": "IS",
+                "length": 1,
+                "mandatory": true,
+                "table": "0116"
+              },
+              {
+                "name": "accountStatus",
+                "type": "IS",
+                "length": 2,
+                "table": "0117"
+              },
+              {
+                "name": "pendingLocation",
+                "type": "PL",
+                "length": 80
+              },
+              {
+                "name": "priorTemporaryLocation",
+                "type": "PL",
+                "length": 80
+              },
+              {
+                "name": "admitDateTime",
+                "type": "DTM",
+                "length": 24
+              },
+              {
+                "name": "dischargeDateTime",
+                "type": "DTM",
+                "length": 24
+              },
+              {
+                "name": "currentPatientBalance",
+                "type": "NM",
+                "length": 12
+              },
+              {
+                "name": "totalCharges",
+                "type": "NM",
+                "length": 12
+              },
+              {
+                "name": "totalAdjustments",
+                "type": "NM",
+                "length": 12
+              },
+              {
+                "name": "totalPayments",
+                "type": "NM",
+                "length": 12
+              },
+              {
+                "name": "alternateVisitId",
+                "type": "CX",
+                "length": 250,
+                "table": "0326"
+              },
+              {
+                "name": "visitIndicator",
+                "type": "IS",
+                "length": 1
+              },
+              {
+                "name": "otherHealthcareProvider",
+                "type": "XCN",
+                "length": 250,
+                "mandatory": true,
+                "repeats": true,
+                "table": "0010"
+              }
+            ]
+          }
         }
-      }
-    },
+      },
     "HL7": {
       "separator": "\u000D",
       "partId": "type",
