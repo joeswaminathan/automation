@@ -3632,117 +3632,683 @@
       }
     },
     "OBR": {
-      "separator": ".",
-      "versions": {
-        "2.6": {
-          "appliesTo": "equalOrGreater",
-          "length": -1,
-          "parts": [
-            {
-              "mandatory": true,
-              "name": "setId",
-              "type": "SI",
-              "length": 4
-            },
-            {
-              "name": "placerOrderNumber",
-              "type": "EI",
-              "length": 250
-            },
-            {
-              "name": "fillerOrderNumber",
-              "type": "EI",
-              "length": 250
-            },
-            {
-              "mandatory": true,
-              "name": "universalServiceIdentifier",
-              "type": "CWE",
-              "length": 250
-            },
-            {
-              "name": "priority",
-              "type": "ID",
-              "length": 2
-            },
-            {
-              "name": "requestedDateTime",
-              "type": "DTM",
-              "length": 24
-            },
-            {
-              "name": "observationDateTime",
-              "type": "DTM",
-              "length": 24
-            },
-            {
-              "name": "observationEndDateTime",
-              "type": "DTM",
-              "length": 24
-            },
-            {
-              "name": "collectionVolume",
-              "type": "CQ",
-              "length": 722
-            }
-          ]
-        }
+    "separator": ".",
+    "versions": {
+      "2.6": {
+        "appliesTo": "equalOrGreater",
+        "totalFields": 50,
+        "parts": [
+          {
+            "name": "OBR.1 - Set ID - OBR",
+            "type": "SI",
+            "length": 4,
+            "table": ""
+          },
+          {
+            "name": "OBR.2 - Placer Order Number",
+            "type": "EI",
+            "length": 427,
+            "mandatory": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.3 - Filler Order Number",
+            "type": "EI",
+            "length": 427,
+            "mandatory": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.4 - Universal Service Identifier",
+            "type": "CWE",
+            "length": 705,
+            "mandatory": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.5 - Priority",
+            "type": "ID",
+            "length": 2,
+            "mandatory": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.6 - Requested Date/Time",
+            "type": "DTM",
+            "length": 24,
+            "mandatory": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.7 - Observation Date/Time",
+            "type": "DTM",
+            "length": 24,
+            "mandatory": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.8 - Observation End Date/Time",
+            "type": "DTM",
+            "length": 24,
+            "table": ""
+          },
+          {
+            "name": "OBR.9 - Collection Volume",
+            "type": "CQ",
+            "length": 722,
+            "table": ""
+          },
+          {
+            "name": "OBR.10 - Collector Identifier",
+            "type": "XCN",
+            "length": 3220,
+            "repeats": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.11 - Specimen Action Code",
+            "type": "ID",
+            "length": 1,
+            "table": "0065"
+          },
+          {
+            "name": "OBR.12 - Danger Code",
+            "type": "CWE",
+            "length": 705,
+            "table": ""
+          },
+          {
+            "name": "OBR.13 - Relevant Clinical Information",
+            "type": "ST",
+            "length": 300,
+            "table": ""
+          },
+          {
+            "name": "OBR.14 - Specimen Received Date/Time",
+            "type": "DTM",
+            "length": 24,
+            "mandatory": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.15 - Specimen Source",
+            "type": "SPS",
+            "length": 300,
+            "mandatory": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.16 - Ordering Provider",
+            "type": "XCN",
+            "length": 3220,
+            "repeats": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.17 - Order Callback Phone Number",
+            "type": "XTN",
+            "length": 2743,
+            "repeats": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.18 - Placer Field 1",
+            "type": "ST",
+            "length": 199,
+            "table": ""
+          },
+          {
+            "name": "OBR.19 - Placer Field 2",
+            "type": "ST",
+            "length": 199,
+            "table": ""
+          },
+          {
+            "name": "OBR.20 - Filler Field 1",
+            "type": "ST",
+            "length": 199,
+            "table": ""
+          },
+          {
+            "name": "OBR.21 - Filler Field 2",
+            "type": "ST",
+            "length": 199,
+            "table": ""
+          },
+          {
+            "name": "OBR.22 - Results Rpt/Status Chng - Date/Time",
+            "type": "DTM",
+            "length": 24,
+            "mandatory": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.23 - Charge to Practice",
+            "type": "MOC",
+            "length": 504,
+            "table": ""
+          },
+          {
+            "name": "OBR.24 - Diagnostic Serv Sect ID",
+            "type": "ID",
+            "length": 10,
+            "table": "0074"
+          },
+          {
+            "name": "OBR.25 - Result Status",
+            "type": "ID",
+            "length": 1,
+            "mandatory": true,
+            "table": "0123"
+          },
+          {
+            "name": "OBR.26 - Parent Result",
+            "type": "PRL",
+            "length": 977,
+            "table": ""
+          },
+          {
+            "name": "OBR.27 - Quantity/Timing",
+            "type": "TQ",
+            "length": 705,
+            "mandatory": true,
+            "repeats": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.28 - Result Copies To",
+            "type": "XCN",
+            "length": 3220,
+            "repeats": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.29 - Parent",
+            "type": "EIP",
+            "length": 855,
+            "table": ""
+          },
+          {
+            "name": "OBR.30 - Transportation Mode",
+            "type": "ID",
+            "length": 20,
+            "table": "0124"
+          },
+          {
+            "name": "OBR.31 - Reason for Study",
+            "type": "CWE",
+            "length": 705,
+            "repeats": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.32 - Principal Result Interpreter",
+            "type": "NDL",
+            "length": 831,
+            "mandatory": true,
+            "repeats": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.33 - Assistant Result Interpreter",
+            "type": "NDL",
+            "length": 831,
+            "mandatory": true,
+            "repeats": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.34 - Technician",
+            "type": "NDL",
+            "length": 831,
+            "mandatory": true,
+            "repeats": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.35 - Transcriptionist",
+            "type": "NDL",
+            "length": 831,
+            "mandatory": true,
+            "repeats": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.36 - Scheduled Date/Time",
+            "type": "DTM",
+            "length": 24,
+            "table": ""
+          },
+          {
+            "name": "OBR.37 - Number of Sample Containers",
+            "type": "NM",
+            "length": 16,
+            "table": ""
+          },
+          {
+            "name": "OBR.38 - Transport Logistics of Collected Sample",
+            "type": "CWE",
+            "length": 705,
+            "repeats": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.39 - Collector's Comment",
+            "type": "CWE",
+            "length": 705,
+            "repeats": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.40 - Transport Arrangement Responsibility",
+            "type": "CWE",
+            "length": 705,
+            "table": "0224"
+          },
+          {
+            "name": "OBR.41 - Transport Arranged",
+            "type": "ID",
+            "length": 30,
+            "table": "0225"
+          },
+          {
+            "name": "OBR.42 - Escort Required",
+            "type": "ID",
+            "length": 1,
+            "table": ""
+          },
+          {
+            "name": "OBR.43 - Planned Patient Transport Comment",
+            "type": "CWE",
+            "length": 705,
+            "repeats": true,
+            "table": ""
+          },
+          {
+            "name": "OBR.44 - Procedure Code",
+            "type": "CNE",
+            "length": 705,
+            "table": "0088"
+          },
+          {
+            "name": "OBR.45 - Procedure Code Modifier",
+            "type": "CNE",
+            "length": 705,
+            "repeats": true,
+            "table": "0340"
+          },
+          {
+            "name": "OBR.46 - Placer Supplemental Service Information",
+            "type": "CWE",
+            "length": 705,
+            "repeats": true,
+            "table": "0411"
+          },
+          {
+            "name": "OBR.47 - Filler Supplemental Service Information",
+            "type": "CWE",
+            "length": 705,
+            "repeats": true,
+            "table": "0411"
+          },
+          {
+            "name": "OBR.48 - Medically Necessary Duplicate Procedure Reason",
+            "type": "CWE",
+            "length": 705,
+            "mandatory": true,
+            "table": "0476"
+          },
+          {
+            "name": "OBR.49 - Result Handling",
+            "type": "IS",
+            "length": 2,
+            "table": "0507"
+          },
+          {
+            "name": "OBR.50 - Parent Universal Service Identifier",
+            "type": "CWE",
+            "length": 705,
+            "table": ""
+          }
+        ]
       }
-    },
+    }
+  },
     "PV1": {
       "separator": ".",
       "versions": {
         "2.6": {
-          "appliesTo": "equalOrGreater",
-          "length": 1200,
-          "parts": [
+            "appliesTo": "equalOrGreater",
+            "totalFields": 52,
+            "length": 1200,
+            "parts": [
             {
-              "name": "setId",
+              "name": "PV1.1 - Set ID - PV1",
               "type": "SI",
-              "length": 4
+              "length": 4,
+              "table": ""
             },
             {
+              "name": "PV1.2 - Patient Class",
+              "type": "IS",
+              "length": 1,
               "mandatory": true,
-              "name": "patientClass",
-              "type": "IS",
-              "length": 1
+              "table": "0004"
             },
             {
-              "name": "assignedPatientLocation",
+              "name": "PV1.3 - Assigned Patient Location",
               "type": "PL",
-              "length": 80
+              "length": 80,
+              "table": ""
             },
             {
-              "name": "admissionType",
+              "name": "PV1.4 - Admission Type",
               "type": "IS",
-              "length": 2
+              "length": 2,
+              "table": "0007"
             },
             {
-              "name": "rreadmitNumber",
+              "name": "PV1.5 - Preadmit Number",
               "type": "CX",
-              "length": 250
+              "length": 250,
+              "table": ""
             },
             {
-              "name": "priorPatientLocation",
+              "name": "PV1.6 - Prior Patient Location",
               "type": "PL",
-              "length": 80
+              "length": 80,
+              "table": ""
             },
             {
-              "name": "attendingDoctor",
+              "name": "PV1.7 - Attending Doctor",
               "type": "XCN",
-              "length": 250
+              "length": 250,
+              "repeats": true,
+              "table": "0010"
             },
             {
-              "name": "referringDoctor",
+              "name": "PV1.8 - Referring Doctor",
               "type": "XCN",
-              "length": 250
+              "length": 250,
+              "repeats": true,
+              "table": "0010"
             },
             {
-              "name": "consultingDoctor",
+              "name": "PV1.9 - Consulting Doctor",
               "type": "XCN",
-              "length": 250
+              "length": 250,
+              "mandatory": true,
+              "repeats": true,
+              "table": "0010"
+            },
+            {
+              "name": "PV1.10 - Hospital Service",
+              "type": "IS",
+              "length": 3,
+              "table": "0069"
+            },
+            {
+              "name": "PV1.11 - Temporary Location",
+              "type": "PL",
+              "length": 80,
+              "table": ""
+            },
+            {
+              "name": "PV1.12 - Preadmit Test Indicator",
+              "type": "IS",
+              "length": 2,
+              "table": "0087"
+            },
+            {
+              "name": "PV1.13 - Re-admission Indicator",
+              "type": "IS",
+              "length": 2,
+              "table": "0092"
+            },
+            {
+              "name": "PV1.14 - Admit Source",
+              "type": "IS",
+              "length": 6,
+              "table": "0023"
+            },
+            {
+              "name": "PV1.15 - Ambulatory Status",
+              "type": "IS",
+              "length": 2,
+              "repeats": true,
+              "table": "0009"
+            },
+            {
+              "name": "PV1.16 - VIP Indicator",
+              "type": "IS",
+              "length": 2,
+              "table": "0099"
+            },
+            {
+              "name": "PV1.17 - Admitting Doctor",
+              "type": "XCN",
+              "length": 250,
+              "repeats": true,
+              "table": "0010"
+            },
+            {
+              "name": "PV1.18 - Patient Type",
+              "type": "IS",
+              "length": 2,
+              "table": "0018"
+            },
+            {
+              "name": "PV1.19 - Visit Number",
+              "type": "CX",
+              "length": 250,
+              "table": ""
+            },
+            {
+              "name": "PV1.20 - Financial Class",
+              "type": "FC",
+              "length": 50,
+              "repeats": true,
+              "table": ""
+            },
+            {
+              "name": "PV1.21 - Charge Price Indicator",
+              "type": "IS",
+              "length": 2,
+              "table": "0032"
+            },
+            {
+              "name": "PV1.22 - Courtesy Code",
+              "type": "IS",
+              "length": 2,
+              "table": "0045"
+            },
+            {
+              "name": "PV1.23 - Credit Rating",
+              "type": "IS",
+              "length": 2,
+              "table": "0046"
+            },
+            {
+              "name": "PV1.24 - Contract Code",
+              "type": "IS",
+              "length": 2,
+              "repeats": true,
+              "table": "0044"
+            },
+            {
+              "name": "PV1.25 - Contract Effective Date",
+              "type": "DT",
+              "length": 8,
+              "table": ""
+            },
+            {
+              "name": "PV1.26 - Contract Amount",
+              "type": "NM",
+              "length": 12,
+              "table": ""
+            },
+            {
+              "name": "PV1.27 - Contract Period",
+              "type": "NM",
+              "length": 3,
+              "table": ""
+            },
+            {
+              "name": "PV1.28 - Interest Code",
+              "type": "IS",
+              "length": 2,
+              "table": "0073"
+            },
+            {
+              "name": "PV1.29 - Transfer to Bad Debt Code",
+              "type": "IS",
+              "length": 4,
+              "table": "0110"
+            },
+            {
+              "name": "PV1.30 - Transfer to Bad Debt Date",
+              "type": "DT",
+              "length": 8,
+              "table": ""
+            },
+            {
+              "name": "PV1.31 - Bad Debt Agency Code",
+              "type": "IS",
+              "length": 10,
+              "table": "0021"
+            },
+            {
+              "name": "PV1.32 - Bad Debt Transfer Amount",
+              "type": "NM",
+              "length": 12,
+              "repeats": true,
+              "table": ""
+            },
+            {
+              "name": "PV1.33 - Bad Debt Recovery Amount",
+              "type": "NM",
+              "length": 12,
+              "repeats": true,
+              "table": ""
+            },
+            {
+              "name": "PV1.34 - Delete Account Indicator",
+              "type": "IS",
+              "length": 1,
+              "table": "0111"
+            },
+            {
+              "name": "PV1.35 - Delete Account Date",
+              "type": "DT",
+              "length": 8,
+              "table": ""
+            },
+            {
+              "name": "PV1.36 - Discharge Disposition",
+              "type": "IS",
+              "length": 3,
+              "table": "0112"
+            },
+            {
+              "name": "PV1.37 - Discharged to Location",
+              "type": "DLD",
+              "length": 47,
+              "table": "0114"
+            },
+            {
+              "name": "PV1.38 - Diet Type",
+              "type": "CWE",
+              "length": 705,
+              "table": ""
+            },
+            {
+              "name": "PV1.39 - Servicing Facility",
+              "type": "IS",
+              "length": 2,
+              "table": "0115"
+            },
+            {
+              "name": "PV1.40 - Bed Status",
+              "type": "IS",
+              "length": 1,
+              "mandatory": true,
+              "table": "0116"
+            },
+            {
+              "name": "PV1.41 - Account Status",
+              "type": "IS",
+              "length": 2,
+              "table": "0117"
+            },
+            {
+              "name": "PV1.42 - Pending Location",
+              "type": "PL",
+              "length": 80,
+              "table": ""
+            },
+            {
+              "name": "PV1.43 - Prior Temporary Location",
+              "type": "PL",
+              "length": 80,
+              "table": ""
+            },
+            {
+              "name": "PV1.44 - Admit Date/Time",
+              "type": "DTM",
+              "length": 24,
+              "table": ""
+            },
+            {
+              "name": "PV1.45 - Discharge Date/Time",
+              "type": "DTM",
+              "length": 24,
+              "table": ""
+            },
+            {
+              "name": "PV1.46 - Current Patient Balance",
+              "type": "NM",
+              "length": 12,
+              "table": ""
+            },
+            {
+              "name": "PV1.47 - Total Charges",
+              "type": "NM",
+              "length": 12,
+              "table": ""
+            },
+            {
+              "name": "PV1.48 - Total Adjustments",
+              "type": "NM",
+              "length": 12,
+              "table": ""
+            },
+            {
+              "name": "PV1.49 - Total Payments",
+              "type": "NM",
+              "length": 12,
+              "table": ""
+            },
+            {
+              "name": "PV1.50 - Alternate Visit ID",
+              "type": "CX",
+              "length": 250,
+              "table": "0326"
+            },
+            {
+              "name": "PV1.51 - Visit Indicator",
+              "type": "IS",
+              "length": 1,
+              "table": ""
+            },
+            {
+              "name": "PV1.52 - Other Healthcare Provider",
+              "type": "XCN",
+              "length": 250,
+              "mandatory": true,
+              "repeats": true,
+              "table": "0010"
             }
-          ]
+            ]
         }
       }
     },
@@ -3776,13 +4342,11 @@
             {
               "name": "obr",
               "type": "OBR",
-              "repeats": true,
               "length": -1
             },
             {
               "name": "pv1",
               "type": "PV1",
-              "repeats": true,
               "length": -1
             }
           ]
