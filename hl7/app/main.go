@@ -1,7 +1,7 @@
 package main
 
 import (
-    "joeswaminathan.com/Edge_Ble/hl7"
+    "atian.com/hl7"
     "fmt"
 )
 
