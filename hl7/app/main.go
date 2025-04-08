@@ -9,7 +9,7 @@ import (
 func main() {
 	def := &hl7.Definitions{}
 
-	def.Load("hl7_update.json")
+	def.Load("hl7.json")
 	fmt.Println("package hl7\n")
 	def.MakeTypes()
 }
