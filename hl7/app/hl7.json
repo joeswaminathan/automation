@@ -1,5 +1,57 @@
- {
+{
   "tables": {
+    "0001": [
+      {
+        "value": "F",
+        "description": "Female"
+      },
+      {
+        "value": "M",
+        "description": "Male"
+      },
+      {
+        "value": "O",
+        "description": "Other"
+      },
+      {
+        "value": "U",
+        "description": "Unknown"
+      }
+    ],
+    "0002": [
+      {
+        "value": "A",
+        "description": "Separated"
+      },
+      {
+        "value": "D",
+        "description": "Divorced"
+      },
+      {
+        "value": "M",
+        "description": "Married"
+      },
+      {
+        "value": "S",
+        "description": "Single"
+      },
+      {
+        "value": "W",
+        "description": "Widowed"
+      },
+      {
+        "value": "C",
+        "description": "Common law"
+      },
+      {
+        "value": "P",
+        "description": "Domestic partner"
+      },
+      {
+        "value": "U",
+        "description": "Unknown"
+      }
+    ],
     "0003": [
       {
         "value": "A01",
@@ -754,6 +806,64 @@
         "description": "QRF - Waveform result; response to query"
       }
     ],
+    "0004": [
+      {
+        "value": "E",
+        "description": "Emergency"
+      },
+      {
+        "value": "I",
+        "description": "Inpatient"
+      },
+      {
+        "value": "O",
+        "description": "Outpatient"
+      },
+      {
+        "value": "P",
+        "description": "Preadmit"
+      },
+      {
+        "value": "R",
+        "description": "Recurring patient"
+      },
+      {
+        "value": "B",
+        "description": "Obstetrics"
+      },
+      {
+        "value": "C",
+        "description": "Commercial Account"
+      },
+      {
+        "value": "U",
+        "description": "Unknown"
+      }
+    ],
+    "0018": [
+      {
+        "value": "AA",
+        "description": "Associate of Arts"
+      },
+      {
+        "value": "MD",
+        "description": "Doctor of Medicine"
+      },
+      {
+        "value": "PhD",
+        "description": "Doctor of Philosophy"
+      }
+    ],
+    "0061": [
+      {
+        "value": "BCV",
+        "description": "Bank Card Validation Number"
+      },
+      {
+        "value": "ISO",
+        "description": "ISO Check Digit Algorithm"
+      }
+    ],
     "0076": [
       {
         "value": "ACK"
@@ -1044,11 +1154,182 @@
       },
       {
         "value": "2.3.1",
-        "description": "Release 2.3.1"
+        "description": "Release 2.3.1",
+        "comment": "May 1999"
       },
       {
-        "value": "2.3.2",
-        "description": "Release 2.3.2"
+        "value": "2.4",
+        "description": "Release 2.4",
+        "comment": "November 2000"
+      },
+      {
+        "value": "2.5",
+        "description": "Release 2.5",
+        "comment": "May 20003"
+      },
+      {
+        "value": "2.5.1",
+        "description": "Release 2.5.1",
+        "comment": "January 2007"
+      },
+      {
+        "value": "2.6",
+        "description": "Release 2.6",
+        "comment": "July 2007"
+      }
+    ],
+    "0125": [
+      {
+        "value": "AD",
+        "description": "Address"
+      },
+      {
+        "value": "CF",
+        "description": "Coded Element With Formatted Values"
+      },
+      {
+        "value": "CK",
+        "description": "Composite ID With Check Digit"
+      },
+      {
+        "value": "CN",
+        "description": "Composite ID And Name"
+      },
+      {
+        "value": "CP",
+        "description": "Composite Price"
+      },
+      {
+        "value": "CWE",
+        "description": "Coded Entry"
+      },
+      {
+        "value": "CX",
+        "description": "Extended Composite ID With Check Digit"
+      },
+      {
+        "value": "DT",
+        "description": "Date"
+      },
+      {
+        "value": "DTM",
+        "description": "Time Stamp (Date & Time)"
+      },
+      {
+        "value": "ED",
+        "description": "Encapsulated Data"
+      },
+      {
+        "value": "FT",
+        "description": "Formatted Text (Display)"
+      },
+      {
+        "value": "MO",
+        "description": "Money"
+      },
+      {
+        "value": "NM",
+        "description": "Numeric"
+      },
+      {
+        "value": "PN",
+        "description": "Person Name"
+      },
+      {
+        "value": "RP",
+        "description": "Reference Pointer"
+      },
+      {
+        "value": "SN",
+        "description": "Structured Numeric"
+      },
+      {
+        "value": "ST",
+        "description": "String Data"
+      },
+      {
+        "value": "TM",
+        "description": "Time"
+      },
+      {
+        "value": "TN",
+        "description": "Telephone Number"
+      },
+      {
+        "value": "TX",
+        "description": "Text Data (Display)"
+      },
+      {
+        "value": "XAD",
+        "description": "Extended Address"
+      },
+      {
+        "value": "XCN",
+        "description": "Extended Composite Name And Number For Persons"
+      },
+      {
+        "value": "XON",
+        "description": "Extended Composite Name And Number For Organizations"
+      },
+      {
+        "value": "XPN",
+        "description": "Extended Person Name"
+      },
+      {
+        "value": "XTN",
+        "description": "Extended Telecommunications Number"
+      }
+    ],
+    "0201": [
+      {
+        "value": "PRN",
+        "description": "Primary Residence Number"
+      },
+      {
+        "value": "WPN",
+        "description": "Work Phone Number"
+      }
+    ],
+    "0202": [
+      {
+        "value": "PH",
+        "description": "Telephone"
+      },
+      {
+        "value": "FX",
+        "description": "Fax"
+      }
+    ],
+    "0203": [
+      {
+        "value": "MR",
+        "description": "Medical Record Number"
+      },
+      {
+        "value": "SS",
+        "description": "Social Security Number"
+      },
+      {
+        "value": "NI",
+        "description": "National Insurance Number"
+      },
+      {
+        "value": "MC",
+        "description": "Master Citizen Number"
+      }
+    ],
+    "0204": [
+      {
+        "value": "L",
+        "description": "Legal"
+      },
+      {
+        "value": "D",
+        "description": "Doing Business As"
+      },
+      {
+        "value": "A",
+        "description": "Alias"
       }
     ],
     "0207": [
@@ -1065,8 +1346,76 @@
         "description": "Restore from archive"
       }
     ],
-    "0300": [],
-    "0301": [],
+    "0211": [
+      {
+        "value": "8859/1",
+        "description": "ISO IR 100"
+      },
+      {
+        "value": "UNICODE",
+        "description": "Unicode"
+      },
+      {
+        "value": "ASCII",
+        "description": "ASCII"
+      }
+    ],
+    "0212": [
+      {
+        "value": "US",
+        "description": "United States"
+      },
+      {
+        "value": "CA",
+        "description": "Canada"
+      },
+      {
+        "value": "MX",
+        "description": "Mexico"
+      }
+    ],
+    "0288": [
+      {
+        "value": "001",
+        "description": "Census Tract 001"
+      },
+      {
+        "value": "002",
+        "description": "Census Tract 002"
+      }
+    ],
+    "0289": [
+      {
+        "value": "001",
+        "description": "County Code 001"
+      },
+      {
+        "value": "002",
+        "description": "County Code 002"
+      }
+    ],
+    "0300": [
+      {
+        "value": "ISO",
+        "description": "ISO Object Identifier"
+      }
+    ],
+    "0301": [
+      {
+        "value": "DNS",
+        "description": "Domain Name System"
+      }
+    ],
+    "0306": [
+      {
+        "value": "B",
+        "description": "Bed"
+      },
+      {
+        "value": "R",
+        "description": "Room"
+      }
+    ],
     "0354": [
       {
         "value": "ADT_A01",
@@ -1534,6 +1883,134 @@
       },
       {
         "value": ""
+      }
+    ],
+    "0363": [
+      {
+        "value": "ISO",
+        "description": "ISO"
+      },
+      {
+        "value": "HL7",
+        "description": "HL7"
+      }
+    ],
+    "0399": [
+      {
+        "value": "USA",
+        "description": "United States of America"
+      },
+      {
+        "value": "CAN",
+        "description": "Canada"
+      },
+      {
+        "value": "MEX",
+        "description": "Mexico"
+      }
+    ],
+    "0429": [
+      {
+        "value": "Y",
+        "description": "Yes"
+      },
+      {
+        "value": "N",
+        "description": "No"
+      }
+    ],
+    "0444": [
+      {
+        "value": "F",
+        "description": "Family Name First"
+      },
+      {
+        "value": "G",
+        "description": "Given Name First"
+      }
+    ],
+    "0445": [
+      {
+        "value": "ISS",
+        "description": "Issued"
+      },
+      {
+        "value": "NS",
+        "description": "Not Supported"
+      }
+    ],
+    "0446": [
+      {
+        "value": "CANINE",
+        "description": "Canine"
+      },
+      {
+        "value": "FELINE",
+        "description": "Feline"
+      }
+    ],
+    "0447": [
+      {
+        "value": "LAB",
+        "description": "Labrador"
+      },
+      {
+        "value": "GER",
+        "description": "German Shepherd"
+      }
+    ],
+    "0448": [
+      {
+        "value": "IDE",
+        "description": "Identity"
+      },
+      {
+        "value": "PRF",
+        "description": "Professional"
+      }
+    ],
+    "0465": [
+      {
+        "value": "A",
+        "description": "Alphanumeric"
+      },
+      {
+        "value": "N",
+        "description": "Numeric"
+      }
+    ],
+    "0616": [
+      {
+        "value": "EX",
+        "description": "Expired"
+      },
+      {
+        "value": "ED",
+        "description": "Edited"
+      }
+    ],
+    "0617": [
+      {
+        "value": "H",
+        "description": "Home"
+      },
+      {
+        "value": "W",
+        "description": "Work"
+      },
+      {
+        "value": "O",
+        "description": "Other"
+      }
+    ],
+    "0618": [
+      {
+        "value": "P",
+        "description": "Protected"
+      },
+      {
+        "value": "U",
+        "description": "Unprotected"
       }
     ]
   },
