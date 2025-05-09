@@ -1,5 +1,17 @@
 {
   "commands": [
+    {   "command" : "AddSimulatedDevice",                                                
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedMaestros",
+            "id" : "Maverick-V",
+            "properties" : { 
+                "Port" : 9801,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }        
+        },           
+        "id" : "Maverick-V"
+    },               
     {   "command" : "AddSimulatedDevice",
         "payload" : {
             "command" : "add",
