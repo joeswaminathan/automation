@@ -1,0 +1,16 @@
+{
+  "commands": [
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedCamera",
+            "id" : "Joe-Swami-Camera",
+            "properties" : {
+                "VideoFile" : "/home/ubuntu/ambulance.mp4"
+            }
+        },
+        "id" : "Joe-Swami-Camera-simulated"
+    }
+  ]
+}
+

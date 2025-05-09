@@ -1,0 +1,13 @@
+{
+  "commands": [
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedCamera",
+            "id" : "John-Sin-Camera"
+        },
+        "id" : "John-Sin-Camera-simulated"
+    }
+  ]
+}
+

@@ -1,0 +1,72 @@
+{
+  "commands": [
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedMaestros",
+            "id" : "Jameswell-v",
+            "properties" : {
+                "Port" : 9801,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Jameswell-v"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 6
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedMaestros",
+            "id" : "Michael-v",
+            "properties" : {
+                "Port" : 9802,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Michael-v"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 6
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedMaestros",
+            "id" : "Clara-V",
+            "properties" : {
+                "Port" : 9803,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Clara-V"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 6
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedMaestros",
+            "id" : "Jessie-v",
+            "properties" : {
+                "Port" : 9804,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Jessie-v"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 6
+        }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "commands": [
+    {
+      "command": "task",
+      "payload": [
+        {
+          "command": "AddPatient",
+          "payload": {
+            "type": "REMOTE",
+            "fname": "joe",
+            "lname": "swami",
+            "sex": "male",
+            "DOB": "2025-10-02"
+          },
+          "id": "patient-1"
+        }
+      ],
+      "id": "task-1"
+    },
+    {
+      "command": "task",
+      "payload": [
+        {
+          "command": "AddDevice",
+          "payload": {
+            "type": "CAMERA",
+            "branch": "",
+            "mac": "00.00.00.00",
+            "deviceSerial": "camera-1"
+          },
+          "id": "device-1"
+        }
+      ],
+      "id": "task-2"
+    },
+    {
+      "command": "wait",
+      "payload": [
+        "task-1",
+        "task-1"
+      ]
+    },
+    {
+      "command" : "WriteDB",
+      "payload" : {
+        "JsonDB" : "db.json"
+      }
+    }
+  ]
+}

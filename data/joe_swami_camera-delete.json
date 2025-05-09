@@ -1,0 +1,13 @@
+{
+  "commands": [
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedCamera",
+            "id" : "Joe-Swami-Camera"
+        },
+        "id" : "Joe-Swami-Camera-simulated"
+    }
+  ]
+}
+

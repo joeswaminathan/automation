@@ -1,0 +1,16 @@
+{
+  "commands": [
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedCamera",
+            "id" : "Clinton-Bose-Camera",
+            "properties" : {
+                "VideoFile" : "/home/ubuntu/ambulance.mp4"
+            }
+        },
+        "id" : "Clinton-Bose-Camera-simulated"
+    }
+  ]
+}
+

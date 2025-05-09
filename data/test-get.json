@@ -1,0 +1,16 @@
+{
+  "commands": [
+    {
+      "command": "GetPatients"
+    },
+    {
+      "command": "GetDevices"
+    },
+    {
+      "command" : "WriteDB",
+      "payload" : {
+        "JsonDB" : "db1.json"
+      }
+    }
+  ]
+}

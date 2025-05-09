@@ -1,0 +1,175 @@
+{
+  "commands": [
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedCamera",
+            "id" : "Maverick-Sanon-Camera",
+            "properties" : {
+                "VideoFile" : "/etc/hv_simulation/reduced_iStock-2148089138.mp4"
+            }
+        },
+        "id" : "Maverick-Sanon-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 2
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedCamera",
+            "id" : "Subash-Jain-Camera",
+            "properties" : {
+                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1200868005.mp4"
+            }
+        },
+        "id" : "Subash-Jain-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 2
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedCamera",
+            "id" : "Harris-Jad-Camera",
+            "properties" : {
+                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1281504148.mp4"
+            }
+        },
+        "id" : "Harris-Jad-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 2
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedCamera",
+            "id" : "John-Sin-Camera",
+            "properties" : {
+                "VideoFile" : "/etc/hv_simulation/reduced_iStock-2148089138.mp4"
+            }
+        },
+        "id" : "John-Sin-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 2
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedCamera",
+            "id" : "Clinton-Bose-Camera",
+            "properties" : {
+                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1281504148.mp4"
+            }
+        },
+        "id" : "Clinton-Bose-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 2
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedCamera",
+            "id" : "Jameswell-K-Camera",
+            "properties" : {
+                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1203943728.mp4"
+            }
+        },
+        "id" : "Jameswell-K-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 2
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedCamera",
+            "id" : "Henry-H-Camera",
+            "properties" : {
+                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1203943728.mp4"
+            }
+        },
+        "id" : "Henry-H-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 2
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedCamera",
+            "id" : "Michael-SG-Camera",
+            "properties" : {
+                "VideoFile" : "/etc/hv_simulation/reduced_iStock-2148089138.mp4"
+            }
+        },
+        "id" : "Michael-SG-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 2
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedCamera",
+            "id" : "Gavin-Garett-Camera",
+            "properties" : {
+                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1200868005.mp4"
+            }
+        },
+        "id" : "Gavin-Garett-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 2
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedCamera",
+            "id" : "Jessie-Hope-Camera",
+            "properties" : {
+                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1200868005.mp4"
+            }
+        },
+        "id" : "Jessie-Hope-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 2
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedCamera",
+            "id" : "Clara-Elle-Camera",
+            "properties" : {
+                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1281504148.mp4"
+            }
+        },
+        "id" : "Clara-Elle-Camera-simulated"
+    }
+  ]
+}
