@@ -1,0 +1,147 @@
+{
+  "commands": [
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedCamera",
+            "id" : "Maverick-Sanon-Camera"
+        },
+        "id" : "Maverick-Sanon-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedCamera",
+            "id" : "Subash-Jain-Camera"
+        },
+        "id" : "Subash-Jain-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedCamera",
+            "id" : "Harris-Jad-Camera"
+        },
+        "id" : "Harris-Jad-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedCamera",
+            "id" : "John-Sin-Camera"
+        },
+        "id" : "John-Sin-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedCamera",
+            "id" : "Clinton-Bose-Camera"
+        },
+        "id" : "Clinton-Bose-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedCamera",
+            "id" : "Jameswell-K-Camera"
+        },
+        "id" : "Jameswell-K-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedCamera",
+            "id" : "Henry-H-Camera"
+        },
+        "id" : "Henry-H-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedCamera",
+            "id" : "Michael-SG-Camera"
+        },
+        "id" : "Michael-SG-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedCamera",
+            "id" : "Gavin-Garett-Camera"
+        },
+        "id" : "Gavin-Garett-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedCamera",
+            "id" : "Jessie-Hope-Camera"
+        },
+        "id" : "Jessie-Hope-Camera-simulated"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedCamera",
+            "id" : "Clara-Elle-Camera"
+        },
+        "id" : "Clara-Elle-Camera-simulated"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "commands": [
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedMaestros",
+            "id" : "Maverick-V",
+            "properties" : {
+                "Port" : 9801,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Maverick-V"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedMaestros",
+            "id" : "Subash-V",
+            "properties" : {
+                "Port" : 9802,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Subash-V"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedMaestros",
+            "id" : "Harris-V",
+            "properties" : {
+                "Port" : 9803,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Harris-V"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedMaestros",
+            "id" : "John-V",
+            "properties" : {
+                "Port" : 9804,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "John-V"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedMaestros",
+            "id" : "Clinton-V",
+            "properties" : {
+                "Port" : 9805,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Clinton-V"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedMaestros",
+            "id" : "Jameswell-v",
+            "properties" : {
+                "Port" : 9806,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Jameswell-v"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedMaestros",
+            "id" : "Henry-V",
+            "properties" : {
+                "Port" : 9807,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Henry-V"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedMaestros",
+            "id" : "Michael-v",
+            "properties" : {
+                "Port" : 9808,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Michael-v"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedMaestros",
+            "id" : "Gavin-V",
+            "properties" : {
+                "Port" : 9809,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Gavin-V"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedMaestros",
+            "id" : "Jessie-v",
+            "properties" : {
+                "Port" : 9810,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Jessie-v"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedMaestros",
+            "id" : "Clara-V",
+            "properties" : {
+                "Port" : 9811,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Clara-V"
+    }
+  ]
+}

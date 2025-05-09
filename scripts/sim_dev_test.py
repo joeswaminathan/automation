@@ -181,7 +181,7 @@ class SaaS(HttpOps):
         response = await self.post(url, filters)
         if response is not None:
             for device in response['data']['items']:
-                print(f"device={device['uuid']}: {device['deviceSerial']}")
+                print(f"device={device['uuid']}: {device['serial']}")
             return response['data']['items']
         else:
             return None
@@ -197,8 +197,8 @@ class SaaS(HttpOps):
         devices = {}
         if response is not None:
             for device in response['data']['items']:
-                devices[device['deviceSerial']] = device
-                print(f"device={device['uuid']}: {device['deviceSerial']}")
+                devices[device['serial']] = device
+                print(f"device={device['uuid']}: {device['serial']}")
             return devices
         return devices
 
@@ -208,7 +208,7 @@ class SaaS(HttpOps):
         # Refresh the stored data
         device = await self.get_device(dId)
         devices = await self.get_patient_devices(pId)
-        attachedDevice = devices.get(device['deviceSerial'], None)
+        attachedDevice = devices.get(device['serial'], None)
         if attachedDevice is not None:
             print(f"Error device ({dId}) is alread attached to patient ({pId})")
             return
@@ -219,7 +219,7 @@ class SaaS(HttpOps):
         payload = {
             "deviceUUID": device['uuid'],
             "mac": device["mac"],
-            "deviceSerial": device["deviceSerial"],
+            "serial": device["serial"],
             "configuration": 0.15,
             "type": device["type"],
             "branch": device["branch"]
@@ -237,7 +237,7 @@ class SaaS(HttpOps):
             print(f"Error device ({dId}) is not attached to patient ({pId})")
             return None
         devices = await self.get_patient_devices(pId)
-        attachedDevice = devices.get(device['deviceSerial'], None)
+        attachedDevice = devices.get(device['serial'], None)
         if attachedDevice is None:
             print(f"Error device ({dId}) is not attached to patient ({pId})")
             return
@@ -313,7 +313,7 @@ class Edge(HttpOps):
         url = self.makeUrl("device")
         response = await self.post(url, payload)
         if response is not None:
-            simulatedDB[sId] = payload
+            #simulatedDB[sId] = payload
             return True
         return False
 
@@ -322,7 +322,7 @@ class Edge(HttpOps):
         url = self.makeUrl("device")
         response = await self.post(url, payload)
         if response is not None:
-            del simulatedDB[payload['id']]
+            #del simulatedDB[payload['id']]
             return True
         return False
         """
@@ -348,9 +348,10 @@ class Edge(HttpOps):
             streams[stream['name']] = stream
         return streams
 
-ED = Edge("http://13.234.227.253:8118/")
-SD = SaaS(os.getenv('TOKEN'),
-          "https://in.livehealthyvibes.com/searchmanager/api/v1/")
+#ED = Edge("http://13.234.227.253:8118/") # hvproxy
+ED = Edge("http://3.12.96.182:8118/") # hvusproxy
+#SD = SaaS(os.getenv('TOKEN'),
+#          "https://us.livehealthyvibes.com/searchmanager/api/v1/")
 
 async def execute_command(command):
     global ED, SD
@@ -422,6 +423,7 @@ async def main():
         data = json.load(file)
 
     for command in data['commands']:
+        print(f"Executing command {command}")
         await execute_command(command)
 
 if __name__ == "__main__":

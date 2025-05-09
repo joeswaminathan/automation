@@ -1,0 +1,16 @@
+{
+  "commands": [
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedCamera",
+            "id" : "John-Sin-Camera",
+            "properties" : {
+                "VideoFile" : "/etc/hv_simulation/reduced_iStock-2148089138.mp4"
+            }
+        },
+        "id" : "John-Sin-Camera-simulated"
+    }
+  ]
+}
+

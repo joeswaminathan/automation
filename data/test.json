@@ -1,0 +1,56 @@
+{
+  "commands": [
+    {
+      "command" : "ReadPatient",
+      "payload" : {
+        "id" : "patient-1",
+        "uuid" : "101bcf4a-dfa4-4b55-abc6-3f492ebde989"
+      }
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 1
+        }
+    },
+    {
+      "command" : "ReadDevice",
+      "payload" : {
+        "id" : "device-1",
+        "uuid" : "a9f0fa6b-6de4-4d5b-95d7-8708f6dcd8c7"
+      }
+    },
+    {
+      "command" : "WriteDB",
+      "payload" : {
+        "JsonDB" : "db.json"
+      }
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 10
+        }
+    },
+    {
+      "command" : "DeleteDevice",
+      "id" : "patient-1"
+    },
+    {
+      "command" : "DeleteDevice",
+      "id" : "patient-2"
+    },
+    {
+      "command": "GetDevices"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 10
+        }
+    },
+    {
+      "command" : "WriteDB",
+      "payload" : {
+        "JsonDB" : "db.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "commands": [
+    {   "command" : "DeleteSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedMaestros",
+            "id" : "Clinton-V",
+            "properties" : {
+                "Port" : 9805,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Clinton-V"
+    }
+  ]
+}

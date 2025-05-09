@@ -1,0 +1,13 @@
+{
+  "commands": [
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedCamera",
+            "id" : "Clinton-Bose-Camera"
+        },
+        "id" : "Clinton-Bose-Camera-simulated"
+    }
+  ]
+}
+
