@@ -6,7 +6,7 @@
             "brand" : "SimulatedCamera",
             "id" : "Maverick-Sanon-Camera",
             "properties" : {
-                "VideoFile" : "/etc/hv_simulation/reduced_iStock-2148089138.mp4"
+                "VideoFile" : "/etc/hv_simulation/Maverick-Sanon-Camera.mp4"
             }
         },
         "id" : "Maverick-Sanon-Camera-simulated"
@@ -22,7 +22,7 @@
             "brand" : "SimulatedCamera",
             "id" : "Subash-Jain-Camera",
             "properties" : {
-                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1200868005.mp4"
+                "VideoFile" : "/etc/hv_simulation/Subash-Jain-Camera.mp4"
             }
         },
         "id" : "Subash-Jain-Camera-simulated"
@@ -38,7 +38,7 @@
             "brand" : "SimulatedCamera",
             "id" : "Harris-Jad-Camera",
             "properties" : {
-                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1281504148.mp4"
+                "VideoFile" : "/etc/hv_simulation/Harris-Jad-Camera.mp4"
             }
         },
         "id" : "Harris-Jad-Camera-simulated"
@@ -54,7 +54,7 @@
             "brand" : "SimulatedCamera",
             "id" : "John-Sin-Camera",
             "properties" : {
-                "VideoFile" : "/etc/hv_simulation/reduced_iStock-2148089138.mp4"
+                "VideoFile" : "/etc/hv_simulation/John-Sin-Camera.mp4"
             }
         },
         "id" : "John-Sin-Camera-simulated"
@@ -70,7 +70,7 @@
             "brand" : "SimulatedCamera",
             "id" : "Clinton-Bose-Camera",
             "properties" : {
-                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1281504148.mp4"
+                "VideoFile" : "/etc/hv_simulation/Clinton-Bose-Camera.mp4"
             }
         },
         "id" : "Clinton-Bose-Camera-simulated"
@@ -86,7 +86,7 @@
             "brand" : "SimulatedCamera",
             "id" : "Jameswell-K-Camera",
             "properties" : {
-                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1203943728.mp4"
+                "VideoFile" : "/etc/hv_simulation/Jameswell-K-Camera.mp4"
             }
         },
         "id" : "Jameswell-K-Camera-simulated"
@@ -102,7 +102,7 @@
             "brand" : "SimulatedCamera",
             "id" : "Henry-H-Camera",
             "properties" : {
-                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1203943728.mp4"
+                "VideoFile" : "/etc/hv_simulation/Henry-H-Camera.mp4"
             }
         },
         "id" : "Henry-H-Camera-simulated"
@@ -118,7 +118,7 @@
             "brand" : "SimulatedCamera",
             "id" : "Michael-SG-Camera",
             "properties" : {
-                "VideoFile" : "/etc/hv_simulation/reduced_iStock-2148089138.mp4"
+                "VideoFile" : "/etc/hv_simulation/Michael-SG-Camera.mp4"
             }
         },
         "id" : "Michael-SG-Camera-simulated"
@@ -134,7 +134,7 @@
             "brand" : "SimulatedCamera",
             "id" : "Gavin-Garett-Camera",
             "properties" : {
-                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1200868005.mp4"
+                "VideoFile" : "/etc/hv_simulation/Gavin-Garett-Camera.mp4"
             }
         },
         "id" : "Gavin-Garett-Camera-simulated"
@@ -150,7 +150,7 @@
             "brand" : "SimulatedCamera",
             "id" : "Jessie-Hope-Camera",
             "properties" : {
-                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1200868005.mp4"
+                "VideoFile" : "/etc/hv_simulation/Jessie-Hope-Camera.mp4"
             }
         },
         "id" : "Jessie-Hope-Camera-simulated"
@@ -166,7 +166,7 @@
             "brand" : "SimulatedCamera",
             "id" : "Clara-Elle-Camera",
             "properties" : {
-                "VideoFile" : "/etc/hv_simulation/reduced_iStock-1281504148.mp4"
+                "VideoFile" : "/etc/hv_simulation/Clara-Elle-Camera.mp4"
             }
         },
         "id" : "Clara-Elle-Camera-simulated"
