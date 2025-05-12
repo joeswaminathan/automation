@@ -1,0 +1,38 @@
+{
+  "commands": [
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedMaestros",
+            "id" : "Jameswell-v",
+            "properties" : {
+                "Port" : 9801,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Jameswell-v"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 6
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "delete",
+            "brand" : "SimulatedMaestros",
+            "id" : "Michael-v",
+            "properties" : {
+                "Port" : 9802,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Michael-v"
+    },
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 6
+        }
+    }
+  ]
+}
