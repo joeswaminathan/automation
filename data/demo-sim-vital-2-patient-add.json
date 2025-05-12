@@ -1,0 +1,33 @@
+{
+  "commands": [
+    {   "command" : "AddSimulatedDevice",                                                
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedMaestros",
+            "id" : "Maverick-V",
+            "properties" : { 
+                "Port" : 9801,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }        
+        },           
+        "id" : "Maverick-V"
+    },               
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 6
+        }
+    },
+    {   "command" : "AddSimulatedDevice",
+        "payload" : {
+            "command" : "add",
+            "brand" : "SimulatedMaestros",
+            "id" : "Clara-V",
+            "properties" : {
+                "Port" : 9803,
+                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
+            }
+        },
+        "id" : "Clara-V"
+    }
+  ]
+}

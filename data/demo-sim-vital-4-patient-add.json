@@ -12,6 +12,11 @@
         },           
         "id" : "Maverick-V"
     },               
+    {   "command" : "Pause",
+        "payload" : {
+            "duration" : 6
+        }
+    },
     {   "command" : "AddSimulatedDevice",
         "payload" : {
             "command" : "add",
@@ -57,28 +62,6 @@
             }
         },
         "id" : "Clara-V"
-    },
-    {   "command" : "Pause",
-        "payload" : {
-            "duration" : 6
-        }
-    },
-    {   "command" : "AddSimulatedDevice",
-        "payload" : {
-            "command" : "add",
-            "brand" : "SimulatedMaestros",
-            "id" : "Jessie-v",
-            "properties" : {
-                "Port" : 9804,
-                "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
-            }
-        },
-        "id" : "Jessie-v"
-    },
-    {   "command" : "Pause",
-        "payload" : {
-            "duration" : 6
-        }
     }
   ]
 }
