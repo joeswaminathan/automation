@@ -6,7 +6,7 @@
             "brand" : "SimulatedMaestros",
             "id" : "Maverick-V",
             "properties" : { 
-                "Port" : 9801,
+                "Port" : 9808,
                 "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
             }        
         },           
@@ -23,7 +23,7 @@
             "brand" : "SimulatedMaestros",
             "id" : "Clara-V",
             "properties" : {
-                "Port" : 9803,
+                "Port" : 9809,
                 "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
             }
         },
