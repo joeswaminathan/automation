@@ -6,7 +6,7 @@
             "brand" : "SimulatedMaestros",
             "id" : "Jessie-v",
             "properties" : {
-                "Port" : 9804,
+                "Port" : 9801,
                 "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
             }
         },
@@ -91,7 +91,7 @@
             "brand" : "SimulatedMaestros",
             "id" : "Henry-V",
             "properties" : {
-                "Port" : 9807,
+                "Port" : 9806,
                 "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
             }
         },
@@ -108,7 +108,7 @@
             "brand" : "SimulatedMaestros",
             "id" : "Gavin-V",
             "properties" : {
-                "Port" : 9809,
+                "Port" : 9807,
                 "DataFile" : "/etc/hv_simulation/ecg_data_new.txt"
             }
         },
