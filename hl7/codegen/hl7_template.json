@@ -1,0 +1,39 @@
+{
+  "tableEntry" : {
+    "value" : string,
+    "description" : string,
+    "coment" : string
+  },
+  "table" : [
+    tableEntry
+  ],
+  "composite" : {
+    "separator" : "." / "",
+    "versions" : [
+      "<version>" : {
+        "length" : number,
+        "appliesTo" : "equalOrGreater",
+        "optional" : false,
+        "parts" : [
+          {
+            "optional" : true / false,
+            "name" : string,
+            "repeats" : false,
+            "type" : "string" / "number" / "composite",
+            "length" : number,
+            "table" : number,
+            "composites" : composites
+          }
+        ]
+      }
+    ]
+  },
+  "definitions" : {
+    "tables" : [
+      "<table id>" : table
+    ],
+    "dataTypes" : [
+      "<data type name>" : composite
+    ]
+  }
+}
